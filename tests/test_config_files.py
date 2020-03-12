@@ -35,3 +35,8 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(sal_name="MTAOS",
                                          package_name="ts_MTAOS",
                                          config_package_root=self.config_package_root)
+
+    def test_MTMount(self):
+        self.check_standard_config_files(sal_name="MTMount",
+                                         package_name="ts_MTMount",
+                                         config_package_root=self.config_package_root)
