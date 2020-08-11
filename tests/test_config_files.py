@@ -34,6 +34,11 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
                                          package_name="ts_Dome",
                                          config_package_root=self.config_package_root)
 
+    def test_Hexapod(self):
+        self.check_standard_config_files(sal_name="Hexapod",
+                                         module_name="lsst.ts.hexapod",
+                                         config_package_root=self.config_package_root)
+
     def test_MTAOS(self):
         # Use env var ts_MTAOS to find the package because it uses packages
         # missing from the standard devlopment Docker image
@@ -49,4 +54,9 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_MTMount(self):
         self.check_standard_config_files(sal_name="MTMount",
                                          package_name="ts_MTMount",
+                                         config_package_root=self.config_package_root)
+
+    def test_Rotator(self):
+        self.check_standard_config_files(sal_name="Rotator",
+                                         module_name="lsst.ts.rotator",
                                          config_package_root=self.config_package_root)
