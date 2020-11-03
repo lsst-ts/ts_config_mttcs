@@ -29,34 +29,46 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def setUp(self):
         self.config_package_root = pathlib.Path(__file__).parents[1]
 
-    def test_Dome(self):
-        self.check_standard_config_files(sal_name="Dome",
-                                         package_name="ts_Dome",
-                                         config_package_root=self.config_package_root)
+    def test_MTDome(self):
+        self.check_standard_config_files(
+            sal_name="MTDome",
+            package_name="ts_MTDome",
+            config_package_root=self.config_package_root,
+        )
 
     def test_Hexapod(self):
-        self.check_standard_config_files(sal_name="Hexapod",
-                                         module_name="lsst.ts.hexapod",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="Hexapod",
+            module_name="lsst.ts.hexapod",
+            config_package_root=self.config_package_root,
+        )
 
     def test_MTAOS(self):
         # Use env var ts_MTAOS to find the package because it uses packages
         # missing from the standard devlopment Docker image
-        self.check_standard_config_files(sal_name="MTAOS",
-                                         package_name="ts_MTAOS",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="MTAOS",
+            package_name="ts_MTAOS",
+            config_package_root=self.config_package_root,
+        )
 
     def test_MTDomeTrajectory(self):
-        self.check_standard_config_files(sal_name="MTDomeTrajectory",
-                                         package_name="ts_MTDomeTrajectory",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="MTDomeTrajectory",
+            package_name="ts_MTDomeTrajectory",
+            config_package_root=self.config_package_root,
+        )
 
     def test_MTMount(self):
-        self.check_standard_config_files(sal_name="MTMount",
-                                         package_name="ts_MTMount",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="MTMount",
+            package_name="ts_MTMount",
+            config_package_root=self.config_package_root,
+        )
 
     def test_Rotator(self):
-        self.check_standard_config_files(sal_name="Rotator",
-                                         module_name="lsst.ts.rotator",
-                                         config_package_root=self.config_package_root)
+        self.check_standard_config_files(
+            sal_name="Rotator",
+            module_name="lsst.ts.rotator",
+            config_package_root=self.config_package_root,
+        )
