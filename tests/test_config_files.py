@@ -36,10 +36,10 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
-    def test_Hexapod(self):
+    def test_MTHexapod(self):
         self.check_standard_config_files(
-            sal_name="Hexapod",
-            module_name="lsst.ts.hexapod",
+            sal_name="MTHexapod",
+            module_name="lsst.ts.mthexapod",
             config_package_root=self.config_package_root,
         )
 
@@ -66,9 +66,9 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
-    def test_Rotator(self):
+    def test_MTRotator(self):
         self.check_standard_config_files(
-            sal_name="Rotator",
-            module_name="lsst.ts.rotator",
+            sal_name="MTRotator",
+            module_name="lsst.ts.mtrotator",
             config_package_root=self.config_package_root,
         )
