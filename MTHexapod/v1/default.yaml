@@ -32,7 +32,6 @@ camera_config:
     - [0]
   min_temperature: -20
   max_temperature: 20
-  reference_position: [0, 0, 0, 0, 0, 0]
 m2_config:
   elevation_coeffs:
     # Fit of https://github.com/bxin/hexrot/blob/master/LUT/M2%20Hexapod%20Motions%20in%20Elevation%20Axis%202020%2007%2023.xlsx
@@ -67,5 +66,4 @@ m2_config:
     - [0]
   min_temperature: -20
   max_temperature: 20
-  reference_position: [0, 0, 0, 0, 0, 0]
 
