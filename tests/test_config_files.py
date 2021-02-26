@@ -1,6 +1,6 @@
 # This file is part of ts_config_mttcs.
 #
-# Developed for the LSST Telescope and Site Systems.
+# Developed for the Vera Rubin Observatory Telescope and Site Systems.
 # This product includes software developed by the LSST Project
 # (https://www.lsst.org).
 # See the COPYRIGHT file at the top-level directory of this distribution
@@ -33,6 +33,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="MTDome",
             package_name="ts_MTDome",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
 
