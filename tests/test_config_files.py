@@ -1,6 +1,6 @@
 # This file is part of ts_config_mttcs.
 #
-# Developed for the LSST Telescope and Site Systems.
+# Developed for Vera C. Rubin Observatory Telescope and Site Systems.
 # This product includes software developed by the LSST Project
 # (https://www.lsst.org).
 # See the COPYRIGHT file at the top-level directory of this distribution
@@ -33,6 +33,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="MTDome",
             package_name="ts_MTDome",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
 
@@ -40,6 +41,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="MTHexapod",
             module_name="lsst.ts.mthexapod",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
 
@@ -56,6 +58,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="MTDomeTrajectory",
             package_name="ts_MTDomeTrajectory",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
 
@@ -70,5 +73,6 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         self.check_standard_config_files(
             sal_name="MTRotator",
             module_name="lsst.ts.mtrotator",
+            schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
