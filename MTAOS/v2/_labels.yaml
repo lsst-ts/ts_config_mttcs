@@ -1,0 +1,6 @@
+---
+
+# Labels for recommended settings; a dict of label: config_file
+comcam: comcam.yaml
+lsst: lsst.yaml
+lsstfam: lsstfam.yaml
