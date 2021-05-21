@@ -30,6 +30,13 @@ camera_config:
     - [0]
     - [0]
     - [0]
+  min_compensation_adjustment:
+    - 20
+    - 20
+    - 4
+    - 3.3e-4
+    - 3.3e-4
+    - 3.3e-4
   min_temperature: -20
   max_temperature: 20
 m2_config:
@@ -64,6 +71,13 @@ m2_config:
     - [0]
     - [0]
     - [0]
+  min_compensation_adjustment:
+    - 20
+    - 20
+    - 4
+    - 1.3e-4
+    - 1.3e-4
+    - 1.3e-4
   min_temperature: -20
   max_temperature: 20
 
