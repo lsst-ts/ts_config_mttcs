@@ -4,3 +4,4 @@
 comcam: comcam.yaml
 lsst: lsst.yaml
 lsstfam: lsstfam.yaml
+impg: comcam_impg.yaml
