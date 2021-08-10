@@ -1,0 +1,7 @@
+# This configuration is to be used for executing Integration Milestone pg.
+# For more informatino about IMpg see https://sitcomtn-006.lsst.io
+# Work captured in Jira ticket DM-31357.
+camera: comcam
+instrument: comcam
+data_path: /project/tribeiro/IMpg/data/im9-ppg-w_2021_20/
+collections: refcats,LSSTComCam/raw/all,LSSTComCam/calib
