@@ -5,3 +5,4 @@ camera: comcam
 instrument: comcam
 data_path: /project/tribeiro/IMpg/data/im9-ppg-w_2021_20/
 collections: refcats,LSSTComCam/raw/all,LSSTComCam/calib
+visit_id_offset: 4000000000000
