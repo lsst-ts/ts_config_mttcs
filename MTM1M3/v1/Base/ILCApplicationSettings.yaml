@@ -1,0 +1,23 @@
+Timings:
+  ReportServerID: 835
+  ReportServerStatus: 270
+  ChangeILCMode: 335
+  BroadcastStepMotor: 300
+  UnicastStepMotor: 405
+  ElectromechanicalForceAndStatus: 300
+  BroadcastFreezeSensorValues: 192
+  SetBoostValveDCAGains: 40100
+  ReadBoostValveDCAGains: 1100
+  BroadcastForceDemand: 480
+  UnicastSingleAxisForceDemand: 305
+  UnicastDualAxisForceDemand: 310
+  PneumaticForceAndStatus: 320
+  SetADCScanRate: 310
+  SetADCChannelOffsetAndSensitivity: 36250
+  Reset: 84840
+  ReadCalibration: 1725
+  ReadDCAPressureValues: 100100
+  ReportDCAID: 385
+  ReportDCAStatus: 255
+  ReportDCAPressure: 400
+  ReportLVDT: 400

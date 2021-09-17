@@ -1,0 +1,6 @@
+Offset: 0.0
+Limits:
+  FaultLow: 100.0
+  WarningLow: 99.0
+  WarningHigh: -9.0
+  FaultHigh: -10.0

@@ -1,0 +1,13 @@
+HardpointDisplacementToMirrorPositionTablePath: Tables/HardpointDisplacementToMirrorPositionTable.csv
+MirrorPositionToHardpointDisplacementTablePath: Tables/MirrorPositionToHardpointDisplacementTable.csv
+MicrometersPerStep: 0.0607
+MicrometersPerEncoder: 0.2442
+HPEncoderOffsets: [29897, 30786, 53315, 61621, -21824, 35572]
+HardpointMeasuredForceFaultHigh: 3900
+HardpointMeasuredForceFaultLow: -3900
+HardpointMeasuredForceFSBWarningHigh: 100
+HardpointMeasuredForceFSBWarningLow: -100
+HardpointMeasuredForceWarningHigh: 2000
+HardpointMeasuredForceWarningLow: -2000
+AirPressureWarningHigh: 127
+AirPressureWarningLow: 110

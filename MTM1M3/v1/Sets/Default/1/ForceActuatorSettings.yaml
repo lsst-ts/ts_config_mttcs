@@ -1,0 +1,129 @@
+DisabledActuators: []
+AccelerationXTablePath: Tables/AccelerationXTable.csv
+AccelerationYTablePath: Tables/AccelerationYTable.csv
+AccelerationZTablePath: Tables/AccelerationZTable.csv
+AzimuthXTablePath: Tables/AzimuthXTable.csv
+AzimuthYTablePath: Tables/AzimuthYTable.csv
+AzimuthZTablePath: Tables/AzimuthZTable.csv
+HardpointForceMomentTablePath: Tables/HardpointForceMomentTable.csv
+ForceDistributionXTablePath: Tables/ForceDistributionXTable.csv
+ForceDistributionYTablePath: Tables/ForceDistributionYTable.csv
+ForceDistributionZTablePath: Tables/ForceDistributionZTable.csv
+MomentDistributionXTablePath: Tables/MomentDistributionXTable.csv
+MomentDistributionYTablePath: Tables/MomentDistributionYTable.csv
+MomentDistributionZTablePath: Tables/MomentDistributionZTable.csv
+ElevationXTablePath: Tables/ElevationXTable.csv
+ElevationYTablePath: Tables/ElevationYTable.csv
+ElevationZTablePath: Tables/ElevationZTable.csv
+StaticXTablePath: Tables/StaticXTable.csv
+StaticYTablePath: Tables/StaticYTable.csv
+StaticZTablePath: Tables/StaticZTable.csv
+ThermalXTablePath: Tables/ThermalXTable.csv
+ThermalYTablePath: Tables/ThermalYTable.csv
+ThermalZTablePath: Tables/ThermalZTable.csv
+VelocityXTablePath: Tables/VelocityXTable.csv
+VelocityYTablePath: Tables/VelocityYTable.csv
+VelocityZTablePath: Tables/VelocityZTable.csv
+VelocityXZTablePath: Tables/VelocityXZTable.csv
+VelocityYZTablePath: Tables/VelocityYZTable.csv
+MeasuredPrimaryCylinderLimitTablePath: Tables/MeasuredPrimaryCylinderLimitTable.csv
+MeasuredSecondaryCylinderLimitTablePath: Tables/MeasuredSecondaryCylinderLimitTable.csv
+FollowingErrorPrimaryCylinderLimitTablePath: Tables/FollowingErrorPrimaryCylinderLimitTable.csv
+FollowingErrorSecondaryCylinderLimitTablePath: Tables/FollowingErrorSecondaryCylinderLimitTable.csv
+AberrationLimitZTablePath: Tables/AberrationLimitZTable.csv
+NetAberrationForceTolerance: 1
+AccelerationLimitXTablePath: Tables/AccelerationLimitXTable.csv
+AccelerationLimitYTablePath: Tables/AccelerationLimitYTable.csv
+AccelerationLimitZTablePath: Tables/AccelerationLimitZTable.csv
+ActiveOpticLimitZTablePath: Tables/ActiveOpticLimitZTable.csv
+NetActiveOpticForceTolerance: 1
+AzimuthLimitXTablePath: Tables/AzimuthLimitXTable.csv
+AzimuthLimitYTablePath: Tables/AzimuthLimitYTable.csv
+AzimuthLimitZTablePath: Tables/AzimuthLimitZTable.csv
+BalanceLimitXTablePath: Tables/BalanceLimitXTable.csv
+BalanceLimitYTablePath: Tables/BalanceLimitYTable.csv
+BalanceLimitZTablePath: Tables/BalanceLimitZTable.csv
+ElevationLimitXTablePath: Tables/ElevationLimitXTable.csv
+ElevationLimitYTablePath: Tables/ElevationLimitYTable.csv
+ElevationLimitZTablePath: Tables/ElevationLimitZTable.csv
+ForceLimitXTablePath: Tables/ForceLimitXTable.csv
+ForceLimitYTablePath: Tables/ForceLimitYTable.csv
+ForceLimitZTablePath: Tables/ForceLimitZTable.csv
+OffsetLimitXTablePath: Tables/OffsetLimitXTable.csv
+OffsetLimitYTablePath: Tables/OffsetLimitYTable.csv
+OffsetLimitZTablePath: Tables/OffsetLimitZTable.csv
+StaticLimitXTablePath: Tables/StaticLimitXTable.csv
+StaticLimitYTablePath: Tables/StaticLimitYTable.csv
+StaticLimitZTablePath: Tables/StaticLimitZTable.csv
+ThermalLimitXTablePath: Tables/ThermalLimitXTable.csv
+ThermalLimitYTablePath: Tables/ThermalLimitYTable.csv
+ThermalLimitZTablePath: Tables/ThermalLimitZTable.csv
+VelocityLimitXTablePath: Tables/VelocityLimitXTable.csv
+VelocityLimitYTablePath: Tables/VelocityLimitYTable.csv
+VelocityLimitZTablePath: Tables/VelocityLimitZTable.csv
+CylinderLimitPrimaryTablePath: Tables/CylinderLimitPrimaryTable.csv
+CylinderLimitSecondaryTablePath: Tables/CylinderLimitSecondaryTable.csv
+ForceActuatorLimitsTablePath: Tables/ForceActuatorLimitsTable.csv
+ForceActuatorNearZNeighborsTablePath: Tables/ForceActuatorNearNeighborZTable.csv
+ForceActuatorNeighborsTablePath: Tables/ForceActuatorNeighborsTable.csv
+UseInclinometer: True
+MirrorXMoment: -65311
+MirrorYMoment: -20000
+MirrorZMoment: -20000
+SetpointXMomentLowLimitFactor: -0.2
+SetpointXMomentHighLimitFactor: 1.2
+SetpointYMomentLowLimitFactor: -0.2
+SetpointYMomentHighLimitFactor: 0.2
+SetpointZMomentLowLimitFactor: -0.2
+SetpointZMomentHighLimitFactor: 0.2
+SetpointNearNeighborLimitFactor: 1
+SetpointMirrorWeightLimitFactor: 1.8
+SetpointFarNeighborLimitFactor: 0.5
+MirrorCenterOfGravityX: -0.001121066
+MirrorCenterOfGravityY: 0.000218726
+MirrorCenterOfGravityZ: -1.7657086
+RaiseIncrementPercentage: 0.05
+LowerDecrementPercentage: 0.05
+RaiseLowerFollowingErrorLimit: 50
+AberrationForceComponent:
+  MaxRateOfChange: 10.0
+  NearZeroValue: 1.0
+AccelerationForceComponent:
+  MaxRateOfChange: 105.0
+  NearZeroValue: 1.0
+ActiveOpticForceComponent:
+  MaxRateOfChange: 10.0
+  NearZeroValue: 1.0
+AzimuthForceComponent:
+  MaxRateOfChange: 105.0
+  NearZeroValue: 1.0
+BalanceForceComponent:
+  MaxRateOfChange: 5.0
+  NearZeroValue: 1.0
+ElevationForceComponent:
+  MaxRateOfChange: 105.0
+  NearZeroValue: 1.0
+OffsetForceComponent:
+  MaxRateOfChange: 105.0
+  NearZeroValue: 1.0
+StaticForceComponent:
+  MaxRateOfChange: 105.0
+  NearZeroValue: 1.0
+ThermalForceComponent:
+  MaxRateOfChange: 10.0
+  NearZeroValue: 1.0
+VelocityForceComponent:
+  MaxRateOfChange: 105.0
+  NearZeroValue: 1.0
+FinalForceComponent:
+  MaxRateOfChange: 315.0
+  NearZeroValue: 1.0
+BumpTest:
+  TestedTolerances:
+    Warning: 2.5
+    Error: 5
+  NonTestedTolerances:
+    Warning: 20
+    Error: 100
+  SettleTime: 3.0
+  Measurements: 10

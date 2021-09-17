@@ -1,0 +1,5 @@
+DataRate: 1000
+AxesMatrix: [1,0,0,0,1,0,0,0,1]
+AngularVelocityXOffset: 0.0
+AngularVelocityYOffset: 0.0
+AngularVelocityZOffset: 0.0

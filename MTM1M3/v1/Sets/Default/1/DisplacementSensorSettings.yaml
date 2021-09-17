@@ -1,0 +1,9 @@
+PositionTablePath: Tables/DisplacementSensorTable.csv
+NPorts: [0, 1, 2, 3, 4, 5, 6, 7]
+NOffsets: [0, 0, 0, 0, 0, 0, 0, 0]
+XPositionOffset: -0.026436776
+YPositionOffset: -0.018945409
+ZPositionOffset: -0.030693524
+XRotationOffset: +0.000017590
+YRotationOffset: +0.000161836
+ZRotationOffset: +0.000459137

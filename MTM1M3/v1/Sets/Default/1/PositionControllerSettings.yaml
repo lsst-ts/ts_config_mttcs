@@ -1,0 +1,7 @@
+ForceToStepsCoefficient: -0.25
+EncoderToStepsCoefficient: 4.023064250411861614497528830313
+MaxStepsPerLoop: 60
+RaiseLowerForceLimitLow: -200
+RaiseLowerForceLimitHigh: 200
+RaiseLowerTimeoutInSeconds: 600
+ReferencePosition: [32438, 37387, 43686, 44733, 34861, 40855]
