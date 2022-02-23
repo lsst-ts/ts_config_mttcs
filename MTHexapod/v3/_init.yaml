@@ -1,0 +1,82 @@
+compensation_interval: 0.2
+connection_timeout: 10
+camera_config:
+  elevation_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  azimuth_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  rotation_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  temperature_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  min_compensation_adjustment:
+    - 1
+    - 1
+    - 1
+    - 1.0e-4
+    - 1.0e-4
+    - 1.0e-4
+  min_temperature: -20
+  max_temperature: 30
+  host: localhost
+  port: 5560
+m2_config:
+  elevation_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  azimuth_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  rotation_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  temperature_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  min_compensation_adjustment:
+    - 1
+    - 1
+    - 1
+    - 1.0e-4
+    - 1.0e-4
+    - 1.0e-4
+  min_temperature: -20
+  max_temperature: 30
+  host: localhost
+  port: 5550
