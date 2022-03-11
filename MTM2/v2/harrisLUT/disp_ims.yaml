@@ -1,0 +1,30 @@
+---
+# The parameters here are used to calculate the rigid body position by the
+# reading of independent measurement system (IMS).
+# The input is a 12x1 matrix of IMS's reading in mm.
+# The order is [A5_thetaZ, A5_deltaZ, A6_thetaZ, A6_deltaZ, A3_thetaZ,
+# A3_deltaZ, A4_thetaZ, A4_deltaZ, A1_thetaZ, A1_deltaZ, A2_thetaZ, A2_deltaZ].
+
+# To get the rigid body position, do: output = matrix x (input - offset).
+
+# Offset of the displacement measurement.
+# These are the values recoded when the M2 is at the home position.
+# This array might need to be updated if the default home position is changed.
+# The unit is mm and the order is mentioned above.
+offset: [15.526, 15.687, 14.82, 16.99, 14.427, 16.702, 14.98, 16.886,
+         14.749, 17.688, 14.889, 16.521]
+
+# A 6x12 matrix to transform the readings of IMS to rigid body position.
+# Do the matrix multiplication mentioned above to get x, y, z in um
+# and rx, ry, rz in arcsec.
+matrix: [[166.667, 0, -166.667, 0, 166.667, 0, 333.333, 0, -333.333, 0,
+          -166.667, 0],
+         [-288.675, 0, -288.675, 0, 288.675, 0, 0, 0, 0, 0,
+          288.675, 0],
+         [0, 166.667, 0, 166.667, 0, 166.667, 0, 166.667, 0, 166.667, 0,
+          166.667],
+         [0, -19.302, 0, 19.302, 0, -19.302, 0, -38.603, 0, 38.603, 0,
+          19.302],
+         [0, 33.431, 0, 33.431, 0, -33.431, 0, 0, 0, 0, 0, -33.431],
+         [19.302, 0, 19.302, 0, 19.302, 0, 19.302, 0, 19.302, 0, 19.302,
+          0]]
