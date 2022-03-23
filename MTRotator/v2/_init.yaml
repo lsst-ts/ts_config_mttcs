@@ -1,0 +1,5 @@
+max_ccw_following_error: 2.2
+num_ccw_following_errors: 3
+host: localhost
+port: 5570
+connection_timeout: 10

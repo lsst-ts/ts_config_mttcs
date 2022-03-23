@@ -1,0 +1,5 @@
+connection_timeout: 10
+ack_timeout: 10
+camera_cable_wrap_advance_time: 0.02
+camera_cable_wrap_interval: 0.1
+max_rotator_position_error: 0.1

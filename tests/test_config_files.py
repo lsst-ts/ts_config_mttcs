@@ -57,7 +57,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_MTDomeTrajectory(self):
         self.check_standard_config_files(
             sal_name="MTDomeTrajectory",
-            module_name="lsst.ts.MTDomeTrajectory",
+            module_name="lsst.ts.mtdometrajectory",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
@@ -65,7 +65,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_MTMount(self):
         self.check_standard_config_files(
             sal_name="MTMount",
-            module_name="lsst.ts.MTMount",
+            module_name="lsst.ts.mtmount",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
