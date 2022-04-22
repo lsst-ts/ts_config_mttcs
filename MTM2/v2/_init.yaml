@@ -1,3 +1,6 @@
 ---
 
 lut_path: "harrisLUT/"
+host: "localhost"
+port_command: 50000
+port_telemetry: 50001
