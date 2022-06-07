@@ -32,7 +32,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def test_MTDome(self):
         self.check_standard_config_files(
             sal_name="MTDome",
-            package_name="ts_MTDome",
+            module_name="lsst.ts.mtdome",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
@@ -50,7 +50,7 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
         # missing from the standard devlopment Docker image
         self.check_standard_config_files(
             sal_name="MTAOS",
-            package_name="ts_MTAOS",
+            module_name="lsst.ts.MTAOS",
             config_package_root=self.config_package_root,
         )
 
