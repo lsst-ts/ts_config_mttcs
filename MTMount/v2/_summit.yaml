@@ -1,2 +1,2 @@
-host: ccw-mgmt.cp.lsst.org
-telemetry_host: ccw-mgmt.cp.lsst.org
+host: tma-controller01.cp.lsst.org
+telemetry_host: tma-controller01.cp.lsst.org
