@@ -70,6 +70,14 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
+    def test_MTM2(self):
+        self.check_standard_config_files(
+            sal_name="MTM2",
+            module_name="lsst.ts.m2",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
+
     def test_MTMount(self):
         self.check_standard_config_files(
             sal_name="MTMount",
