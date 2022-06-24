@@ -29,10 +29,35 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def setUp(self):
         self.config_package_root = pathlib.Path(__file__).parents[1]
 
+    def test_MTAlignment(self):
+        self.check_standard_config_files(
+            sal_name="MTAlignment",
+            module_name="lsst.ts.MTAlignment",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
+
+    def test_MTAOS(self):
+        # Use env var ts_MTAOS to find the package because it uses packages
+        # missing from the standard devlopment Docker image
+        self.check_standard_config_files(
+            sal_name="MTAOS",
+            module_name="lsst.ts.MTAOS",
+            config_package_root=self.config_package_root,
+        )
+
     def test_MTDome(self):
         self.check_standard_config_files(
             sal_name="MTDome",
-            package_name="ts_MTDome",
+            module_name="lsst.ts.mtdome",
+            schema_name="CONFIG_SCHEMA",
+            config_package_root=self.config_package_root,
+        )
+
+    def test_MTDomeTrajectory(self):
+        self.check_standard_config_files(
+            sal_name="MTDomeTrajectory",
+            module_name="lsst.ts.mtdometrajectory",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
@@ -45,19 +70,10 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
             config_package_root=self.config_package_root,
         )
 
-    def test_MTAOS(self):
-        # Use env var ts_MTAOS to find the package because it uses packages
-        # missing from the standard devlopment Docker image
+    def test_MTM2(self):
         self.check_standard_config_files(
-            sal_name="MTAOS",
-            package_name="ts_MTAOS",
-            config_package_root=self.config_package_root,
-        )
-
-    def test_MTDomeTrajectory(self):
-        self.check_standard_config_files(
-            sal_name="MTDomeTrajectory",
-            module_name="lsst.ts.mtdometrajectory",
+            sal_name="MTM2",
+            module_name="lsst.ts.m2",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )
