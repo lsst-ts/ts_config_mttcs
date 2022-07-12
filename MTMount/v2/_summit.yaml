@@ -1,2 +1,6 @@
-host: tma-controller01.cp.lsst.org
-telemetry_host: tma-controller01.cp.lsst.org
+# Note:
+# 07/12/2022 - Tiago Ribeiro (@tribeiro)
+# By default connect to the ccw management pc. To connect to the tma controller
+# use the alternative tma_controller.yaml configuration.
+host: ccw-mgmt.cp.lsst.org
+telemetry_host: ccw-mgmt.cp.lsst.org
