@@ -1,0 +1,8 @@
+# Note:
+# 07/12/2022 - Tiago Ribeiro (@tribeiro)
+# This configuration is intended to connect to the full TMA controller.
+# At this point we are using the CCW only version of the MTMount primarily
+# at the summit so I will back this configuration up here and will use
+# the ccw as the default for the summit.
+host: tma-controller01.cp.lsst.org
+telemetry_host: tma-controller01.cp.lsst.org
