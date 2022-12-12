@@ -29,10 +29,10 @@ class ConfigTestCase(salobj.BaseConfigTestCase, unittest.TestCase):
     def setUp(self):
         self.config_package_root = pathlib.Path(__file__).parents[1]
 
-    def test_MTAlignment(self):
+    def test_LaserTracker(self):
         self.check_standard_config_files(
-            sal_name="MTAlignment",
-            module_name="lsst.ts.MTAlignment",
+            sal_name="LaserTracker",
+            module_name="lsst.ts.lasertracker",
             schema_name="CONFIG_SCHEMA",
             config_package_root=self.config_package_root,
         )

@@ -1,0 +1,3 @@
+instances:
+  - sal_index: 1
+    t2sa_host: "192.168.0.2"
