@@ -1,0 +1,68 @@
+# The code matches the bit value of "summary faults status" (64 bits value) from cell controller.
+# For example, if the bit 3 is triggered, the error code would be 6051.
+# For the codes such as 10XX (e.g. 1000, 1001, etc.), they are just the dummy codes at this moment. 
+Code	Summary	Status	Source	State	Cause of Error	Comment
+1000	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1001	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1002	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+6051	Actuator ILC Read Error	Fault	Communications	Fault State	ILC responded with: an exception code, did not respond at all (timeout), did not receive command, or reported fault status	Number of telemetry losses exceeded threshold
+6055	Excessive Force Detected	Fault	Control Sensor	Fault State	Measured force exceeded programmable threshold	Evaluated on an individual actuator basis
+6057	Actuator Limit Switch Triggered [Open-loop]	Warning	Limit Switches	Unchanged	An actuator responded with a closed limit switch in any direction	Over SAL, only one alarm, locally, log all alarms individually
+6056	Actuator Limit Switch Triggered [Closed-loop]	Fault	Limit Switches	Fault State	An actuator responded with a closed limit switch in any direction	Over SAL, only one alarm, locally, log all alarms individually
+6058	Inclinometer Error [Fault]	Fault	Control Sensor	Fault State	Communication error or ILC reported fault	ILC reports bad value for inclinometer error
+6059	Inclinometer Error [Warning]	Warning	Control Sensor	Unchanged	Communication error or ILC reported fault	ILC reports bad value for inclinometer error (when not actively using the inclinometer for closed loop control)
+6061	Motor Power Supply(s) Over/Under Voltage [Fault]	Fault	Power Supply	Fault State	Measured voltage exceed programmable limits (2-sided)	Need to cross check tolerance with supplies. Configurable thresholds for voltage tolerance.
+6062	Motor Power Supply(s) Over/Under Voltage [Warning]	Warning	Power Supply	Unchanged	Measured voltage exceed programmable limits (2-sided)	Need to cross check tolerance with supplies. Configurable thresholds for voltage tolerance.
+6063	Comm Power Supply(s) Over/Under Voltage [Fault]	Fault	Power Supply	Fault State	Measured voltage exceed programmable limits (2-sided)	Need to cross check tolerance with supplies. Configurable thresholds for voltage tolerance.
+6064	Comm Power Supply(s) Over/Under Voltage [Warning]	Warning	Power Supply	Unchanged	Measured voltage exceed programmable limits (2-sided)	Need to cross check tolerance with supplies. Configurable thresholds for voltage tolerance.
+6065	Excessive Motor Current	Fault	Power Supply	Fault State	Measured current exceeds programmable limit (1-sided)	Initial error threshold setting based on measured values, but threshold will be configurable via software.
+6066	Excessive Comm Current	Fault	Power Supply	Fault State	Measured current exceeds programmable limit (1-sided)	Initial error threshold setting based on measured values, but threshold will be configurable via software.
+6067	Power Relay Opening Fault	Fault	Power Supply	Fault State	Power relay did not open when commanded by software.	Power is not measured after configurable delay when closing relays. Used for detecting the lack of opening of relays when attempting to remove power
+6068	Power Supply Health Fault	Fault	Power Supply	Fault State	Binary outputs signal power supply health fault	Binary output from power supply signals determine health. Signals: Internal Fault, Power Supply ON.
+6069	Multi-breaker Trip on Same COMM Power Feed	Fault	Power Supply	Fault State	Breaker feedback showed two or more breaker trips	Two breaker trips. Requires two breakers to open on the same feed to generate a fault.
+6070	Multi-breaker Trip on Same MOTOR Power Feed	Fault	Power Supply	Fault State	Breaker feedback showed two or more breaker trips	Two breaker trips. Requires two breakers to open on the same feed to generate a fault.
+6071	Single Breaker Trip	Warning	Power Supply	Unchanged	Breaker feedback showed single breaker trip	One breaker trip is a warning.
+6072	Power Supply Load Sharing Error	Fault	Power Supply	Unchanged	Based on binary output from redundancy module	From redundancy module - balances input power from power supplies.
+6078	Displacement Sensor Out of Range	Warning	Sensor Range	Unchanged	Sensor value out of range	Range not programmable (check for reasonableness)
+6079	Inclinometer Out of Range	Fault	Sensor Range	Fault State	Sensor value out of range	Range not programmable (check for reasonableness)
+6080	Mirror Temperature Sensor Out of Range [Fault]	Fault	Sensor Range	Fault State	Sensor value out of range	Range not programmable (check for reasonableness)
+1024	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+6082	Airflow Temperature Sensor Out of Range	Warning	Sensor Range	Unchanged	Sensor value out of range	Range not programmable (check for reasonableness)
+6083	Axial Actuator Encoder Out of Range	Fault	Sensor Range	Fault State	Sensor value out of range	Range not programmable (check for reasonableness)
+6084	Tangent Actuator Encoder Out of Range	Fault	Sensor Range	Fault State	Sensor value out of range	Range not programmable (check for reasonableness)
+1028	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1029	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1030	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1031	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+6088	Tangent Load Cell Fault	Fault	Alarms	Fault State	Tangent load cell calculations violate any of the four monitoring conditions	Tangent load cells are monitored with additional checks to ensure their sensible output. Using the weight of the mirror, orientation of the TMA inclination, and all four load bearing tangent acutator loads, the estimated mirror weight can be compared to the known mirror weight.
+6060	Inclinometer Difference Error	Fault	Control Sensor	Fault State	Excessive angular difference between TCS elevation and local inclinometer	Difference error checking is configurable
+6052	Monitoring ILC Read Error	Warning	Communications	Unchanged	ILC responded with an exception code or did not respond at all (timeout)	Based on a monitoring ILC read error. Provides warning for any/all monitoring sensors. Further range checking is performed on signals critical for closed loop control (mirror temp)
+1035	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1036	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1037	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1038	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1039	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1040	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1041	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1042	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1043	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1044	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1045	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1046	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1047	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1048	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1049	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1050	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1051	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1052	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1053	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+1054	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+6077	Configurable Parameter File Read Error	Fault	Configuration	Fault State	The software cannot properly read in the file or something is corrupted with the data read from the file	Is only assessed when software parameters are initialized
+6054	ILC State Transition Error	Fault	Control Sensor	Fault State	Internal ILC issue. ILC did not change state	Currently - three retries are implemented.
+6053	cRIO Communication Error	Fault	Communications	Fault State	Loss of communication between cRIO and M2 Controller	cRIO to detect the loss of communications also. cRIO itself goes into fault state.
+6086	Loss of TMA Communications	Warning	Communications	Unchanged	The MTMount.MotionParameters telemetry is not available when in or transitioning to the Enable state	Issue a warning when the MTMount motion parameters are not available when NOT in Enable. The controller does not need the MTMount parameters at this time, therefore -> warning
+6085	Loss of TMA Communications on Enable	Fault	Communications	Fault State	The MTMount.MotionParameters telemetry is not available when in or transitioning to the Enable state	Issue a fault when the MTMount motion parameters are not available when in Enable (or transitioning to Enable). The controller cannot operater in SAL without TMA inclination
+6075	Excessive Cell Temperature Differential	Warning	Env. Temp	Unchanged	Intake-Exhaust temperature diff exceeded programmable threshold	Configurable threshold.  Will use the lowest of the inputs and the highest of the exhaust.
+6073	cRIO 50 msec Cycle Time Monitor [Fault]	Fault	Control Sensor	Fault State	Measured loop time exceeded 50 ms for three consecutive cycles	If there are three consecutive warnings, this is a fault.
+6074	cRIO 50 msec Cycle Time Monitor [Warning]	Warning	Control Sensor	Unchanged	Measured loop time exceeded 50 ms for one cycle.	Warning if a cycle is longer than 50 msec.
+6087	User Identified Error (Emergency Stop)	Fault	Communications	Fault State	The user identifies an error condition that is not detectable via SAL.	A button is created on the EUI to inject a fault to the controller to allow state transitions when the SAL comm link is lost. Since there is no signal available to identify a loss of SAL comm, the state machine is stranded when SAL is lost. This fault kicks the state machine over to the fault state and allows the system to transition to a safe state where comm can be re-initialized. Can also be used to transition the system to the fault state when issues are observed and not captured under existing fault codes
