@@ -1,3 +1,5 @@
+host: localhost
+telemetry_host: localhost
 connection_timeout: 10
 ack_timeout: 10
 camera_cable_wrap_advance_time: 0.05
