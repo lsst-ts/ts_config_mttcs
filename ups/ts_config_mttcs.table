@@ -1,1 +1,9 @@
-# eups is just used to set $TS_CONFIG_..._DIR
+setupOptional(ts_lasertracker)
+setupOptional(ts_MTAirCompressor)
+setupOptional(ts_mtaos)
+setupOptional(ts_mtdome)
+setupOptional(ts_mtdometrajectory)
+setupOptional(ts_mthexapod)
+setupOptional(ts_m2)
+setupOptional(ts_mtmount)
+setupOptional(ts_mtrotator)
