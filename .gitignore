@@ -1,8 +1,14 @@
+__pycache__
 .hypothesis
 .pytest_cache
 pytest_session.txt
-__pycache__
 
 # Editors
 .idea
 .vscode
+
+# ts_pre_commit_config
+.pre-commit-config.yaml
+.flake8
+.isort.cfg
+.mypy.ini
