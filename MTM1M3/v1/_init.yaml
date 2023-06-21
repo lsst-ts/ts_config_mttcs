@@ -71,11 +71,11 @@ DisplacementSensorSettings:
 ForceActuatorSettings:
   BoosterValveControl:
     FollowingError:
-      Enabled: On
-      Open: 50
-      Close: 45
+      Enabled: Off
+      Open: 100
+      Close: 95
     Accelerometer:
-      Enabled: On
+      Enabled: Off
       OpenX: 0.2
       CloseX: 0.15
       OpenY: 0.2
@@ -163,7 +163,7 @@ ForceActuatorSettings:
   MirrorCenterOfGravityZ: -1.7657086
   RaiseIncrementPercentage: 0.05
   LowerDecrementPercentage: 0.05
-  RaiseLowerFollowingErrorLimit: 50
+  RaiseLowerFollowingErrorLimit: 200
   AccelerationForceComponent:
     MaxRateOfChange: 105.0
     NearZeroValue: 1.0
@@ -177,10 +177,10 @@ ForceActuatorSettings:
     MaxRateOfChange: 5.0
     NearZeroValue: 1.0
   ElevationForceComponent:
-    MaxRateOfChange: 105.0
+    MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   OffsetForceComponent:
-    MaxRateOfChange: 105.0
+    MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   StaticForceComponent:
     MaxRateOfChange: 105.0
@@ -192,7 +192,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 105.0
     NearZeroValue: 1.0
   FinalForceComponent:
-    MaxRateOfChange: 315.0
+    MaxRateOfChange: 25.0
     NearZeroValue: 1.0
   BumpTest:
     TestedTolerances:
@@ -289,7 +289,7 @@ PositionControllerSettings:
 SafetyControllerSettings:
   AirControllerSettings:
     FaultOnCommandOutputMismatch: On
-    FaultOnCommandSensorMismatch: On
+    FaultOnCommandSensorMismatch: Off
     ValveTransitionTimeout: 40
   DisplacementSettings:
     FaultOnSensorReportsInvalidCommand: On
@@ -317,11 +317,11 @@ SafetyControllerSettings:
     FaultOnUnknownProblem: On
   InterlockSettings:
     FaultOnHeartbeatStateOutputMismatch: On
-    FaultOnAuxPowerNetworksOff: On
+    FaultOnAuxPowerNetworksOff: Off
     FaultOnThermalEquipmentOff: On
-    FaultOnAirSupplyOff: On
+    FaultOnAirSupplyOff: Off
     FaultOnCabinetDoorOpen: On
-    FaultOnTMAMotionStop: On
+    FaultOnTMAMotionStop: Off
     FaultOnGISHeartbeatLost: On
   ForceControllerSettings:
     FaultOnSafetyLimit: On
@@ -343,12 +343,12 @@ SafetyControllerSettings:
     FaultOnVelocityForceClipping: On
     FaultOnForceClipping: Off
   PositionControllerSettings:
-    FollowingErrorPercentage: 50
-    FaultNumberOfFollowingErrors: 10
+    FollowingErrorPercentage: 110
+    FaultNumberOfFollowingErrors: 50
     FaultOnUnstableCount: 100
   CellLightSettings:
     FaultOnOutputMismatch: On
-    FaultOnSensorMismatch: On
+    FaultOnSensorMismatch: Off
   PowerControllerSettings:
     FaultOnPowerNetworkAOutputMismatch: On
     FaultOnPowerNetworkBOutputMismatch: On
@@ -368,13 +368,13 @@ SafetyControllerSettings:
     FaultOnAngularAccelerationY: On
     FaultOnAngularAccelerationZ: On
   ILCSettings:
-    FaultOnCommunicationTimeout: On
+    FaultOnCommunicationTimeout: Off
     CommunicationTimeoutCountThreshold: 3
     CommunicationTimeoutPeriod: 5
-    FaultOnForceActuatorFollowingErrorCounting: On
+    FaultOnForceActuatorFollowingErrorCounting: Off
     ForceActuatorFollowingErrorCountThreshold: 50
     ForceActuatorFollowingErrorPeriod: 50
-    FaultOnForceActuatorFollowingErrorImmediate: On
+    FaultOnForceActuatorFollowingErrorImmediate: Off
     FaultOnHardpointActuatorMeasuredForce: On
     HardpointActuatorMeasuredForceCountThreshold: 50
     HardpointActuatorMeasuredForcePeriod: 50
@@ -382,14 +382,14 @@ SafetyControllerSettings:
     AirPressureCountThreshold: 50
     AirPressurePeriod: 50
   ForceActuatorFollowingError:
-    FaultOnCounting: On
+    FaultOnCounting: Off
     FaultCount: 45
     FaultCountPeriod: 50
     FaultOnImmediate: On
   TMASettings:
     AzimuthTimeout: 0.5
     ElevationTimeout: 0.5
-    InclinometerDeviationDeg: 2
+    InclinometerDeviationDeg: 180
 ILCApplicationSettings:
   ReportServerID: 835
   ReportServerStatus: 270
