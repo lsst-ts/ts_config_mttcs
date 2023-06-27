@@ -2,7 +2,7 @@ instances:
   - sal_index: 1
     t2sa_host: "lasertracker-vm.cp.lsst.org"
     t2sa_port: 50000
-    read_timeout: 60
+    read_timeout: 240
     targets:
       - CAM
       - M1M3
