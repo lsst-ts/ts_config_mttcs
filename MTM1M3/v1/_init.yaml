@@ -82,7 +82,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: []
+  DisabledActuators: [115,227]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -146,6 +146,7 @@ ForceActuatorSettings:
   ForceActuatorNearZNeighborsTablePath: ForceActuatorNearNeighborZTable.csv
   ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
   UseInclinometer: True
+  UseGyroscope: False
   MirrorXMoment: -65311
   MirrorYMoment: -20000
   MirrorZMoment: -20000
@@ -317,11 +318,11 @@ SafetyControllerSettings:
     FaultOnUnknownProblem: On
   InterlockSettings:
     FaultOnHeartbeatStateOutputMismatch: On
-    FaultOnAuxPowerNetworksOff: Off
+    FaultOnAuxPowerNetworksOff: On
     FaultOnThermalEquipmentOff: On
-    FaultOnAirSupplyOff: Off
+    FaultOnAirSupplyOff: On
     FaultOnCabinetDoorOpen: On
-    FaultOnTMAMotionStop: Off
+    FaultOnTMAMotionStop: On
     FaultOnGISHeartbeatLost: On
   ForceControllerSettings:
     FaultOnSafetyLimit: On
@@ -371,10 +372,10 @@ SafetyControllerSettings:
     FaultOnCommunicationTimeout: Off
     CommunicationTimeoutCountThreshold: 3
     CommunicationTimeoutPeriod: 5
-    FaultOnForceActuatorFollowingErrorCounting: Off
+    FaultOnForceActuatorFollowingErrorCounting: On
     ForceActuatorFollowingErrorCountThreshold: 50
     ForceActuatorFollowingErrorPeriod: 50
-    FaultOnForceActuatorFollowingErrorImmediate: Off
+    FaultOnForceActuatorFollowingErrorImmediate: On
     FaultOnHardpointActuatorMeasuredForce: On
     HardpointActuatorMeasuredForceCountThreshold: 50
     HardpointActuatorMeasuredForcePeriod: 50
