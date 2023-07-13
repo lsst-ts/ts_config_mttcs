@@ -82,7 +82,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: [115,227,410]
+  DisabledActuators: [410]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -181,7 +181,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   OffsetForceComponent:
-    MaxRateOfChange: 20.0
+    MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   StaticForceComponent:
     MaxRateOfChange: 105.0
@@ -290,7 +290,7 @@ PositionControllerSettings:
 SafetyControllerSettings:
   AirControllerSettings:
     FaultOnCommandOutputMismatch: On
-    FaultOnCommandSensorMismatch: Off
+    FaultOnCommandSensorMismatch: On
     ValveTransitionTimeout: 40
   DisplacementSettings:
     FaultOnSensorReportsInvalidCommand: On
