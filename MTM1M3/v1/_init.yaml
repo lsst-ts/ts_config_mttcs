@@ -1,0 +1,418 @@
+AccelerometerSettings:
+  AngularAccelerationXDistance: 0.9478
+  AngularAccelerationYDistance: 0.7565
+  AngularAccelerationZDistance: 4.2500
+  Accelerometer1:
+    Bias: 0.009
+    Sensitivity: .1993
+    Offset: 0.011519981
+    Scalar: 1.0
+  Accelerometer2:
+    Bias: 0.0039
+    Sensitivity: 1.994
+    Offset: 0.007553103
+    Scalar: 1.0
+  Accelerometer3:
+    Bias: 0.0125
+    Sensitivity: 1.994
+    Offset: 0.086111715
+    Scalar: 1.0
+  Accelerometer4:
+    Bias: 0.0007
+    Sensitivity: 1.995
+    Offset: 0.156193491
+    Scalar: 1.0
+  Accelerometer5:
+    Bias: 0.0146
+    Sensitivity: 1.997
+    Offset: -0.141127269
+    Scalar: 1.0
+  Accelerometer6:
+    Bias: 0.017
+    Sensitivity: 1.996
+    Offset: 0.00167552
+    Scalar: 1.0
+  Accelerometer7:
+    Bias: -0.0108
+    Sensitivity: 1.994
+    Offset: -0.010106905
+    Scalar: 1.0
+  Accelerometer8:
+    Bias: 0.0179
+    Sensitivity: 1.992
+    Offset: -0.075325936
+    Scalar: 1.0
+  Limits:
+    AngularAccelerationX:
+      FaultLow: 9000
+      WarningLow: -9000
+      WarningHigh: 9000
+      FaultHigh: 9000
+    AngularAccelerationY:
+      FaultLow: 9000
+      WarningLow: -9000
+      WarningHigh: 9000
+      FaultHigh: 9000
+    AngularAccelerationZ:
+      FaultLow: 9000
+      WarningLow: -9000
+      WarningHigh: 9000
+      FaultHigh: 9000
+DisplacementSensorSettings:
+  PositionTablePath: DisplacementSensorTable.csv
+  NPorts: [0, 1, 2, 3, 4, 5, 6, 7]
+  NOffsets: [0, 0, 0, 0, 0, 0, 0, 0]
+  XPositionOffset: -0.026436776
+  YPositionOffset: -0.018945409
+  ZPositionOffset: -0.030693524
+  XRotationOffset: +0.000017590
+  YRotationOffset: +0.000161836
+  ZRotationOffset: +0.000459137
+ForceActuatorSettings:
+  BoosterValveControl:
+    FollowingError:
+      Enabled: Off
+      Open: 100
+      Close: 95
+    Accelerometer:
+      Enabled: Off
+      OpenX: 0.2
+      CloseX: 0.15
+      OpenY: 0.2
+      CloseY: 0.15
+      OpenZ: 0.2
+      CloseZ: 0.15
+  DisabledActuators: []
+  AccelerationXTablePath: AccelerationXTable.csv
+  AccelerationYTablePath: AccelerationYTable.csv
+  AccelerationZTablePath: AccelerationZTable.csv
+  AzimuthXTablePath: AzimuthXTable.csv
+  AzimuthYTablePath: AzimuthYTable.csv
+  AzimuthZTablePath: AzimuthZTable.csv
+  HardpointForceMomentTablePath: HardpointForceMomentTable.csv
+  ForceDistributionXTablePath: ForceDistributionXTable.csv
+  ForceDistributionYTablePath: ForceDistributionYTable.csv
+  ForceDistributionZTablePath: ForceDistributionZTable.csv
+  MomentDistributionXTablePath: MomentDistributionXTable.csv
+  MomentDistributionYTablePath: MomentDistributionYTable.csv
+  MomentDistributionZTablePath: MomentDistributionZTable.csv
+  ElevationXTablePath: ElevationXTable.csv
+  ElevationYTablePath: ElevationYTable.csv
+  ElevationZTablePath: ElevationZTable.csv
+  StaticXTablePath: StaticXTable.csv
+  StaticYTablePath: StaticYTable.csv
+  StaticZTablePath: StaticZTable.csv
+  ThermalXTablePath: ThermalXTable.csv
+  ThermalYTablePath: ThermalYTable.csv
+  ThermalZTablePath: ThermalZTable.csv
+  VelocityXTablePath: VelocityXTable.csv
+  VelocityYTablePath: VelocityYTable.csv
+  VelocityZTablePath: VelocityZTable.csv
+  VelocityXZTablePath: VelocityXZTable.csv
+  VelocityYZTablePath: VelocityYZTable.csv
+  MeasuredMirrorLimitTablePath: MeasuredMirrorLimitTable.csv
+  MeasuredWarningPercentage: 90
+  FollowingErrorPrimaryCylinderLimitTablePath: FollowingErrorPrimaryCylinderLimitTable.csv
+  FollowingErrorSecondaryCylinderLimitTablePath: FollowingErrorSecondaryCylinderLimitTable.csv
+  AccelerationLimitXTablePath: AccelerationLimitXTable.csv
+  AccelerationLimitYTablePath: AccelerationLimitYTable.csv
+  AccelerationLimitZTablePath: AccelerationLimitZTable.csv
+  ActiveOpticLimitZTablePath: ActiveOpticLimitZTable.csv
+  NetActiveOpticForceTolerance: 1000
+  AzimuthLimitXTablePath: AzimuthLimitXTable.csv
+  AzimuthLimitYTablePath: AzimuthLimitYTable.csv
+  AzimuthLimitZTablePath: AzimuthLimitZTable.csv
+  BalanceLimitXTablePath: BalanceLimitXTable.csv
+  BalanceLimitYTablePath: BalanceLimitYTable.csv
+  BalanceLimitZTablePath: BalanceLimitZTable.csv
+  ElevationLimitXTablePath: ElevationLimitXTable.csv
+  ElevationLimitYTablePath: ElevationLimitYTable.csv
+  ElevationLimitZTablePath: ElevationLimitZTable.csv
+  AppliedForceLimitTablePath: AppliedForceLimitTable.csv
+  OffsetLimitXTablePath: OffsetLimitXTable.csv
+  OffsetLimitYTablePath: OffsetLimitYTable.csv
+  OffsetLimitZTablePath: OffsetLimitZTable.csv
+  StaticLimitXTablePath: StaticLimitXTable.csv
+  StaticLimitYTablePath: StaticLimitYTable.csv
+  StaticLimitZTablePath: StaticLimitZTable.csv
+  ThermalLimitXTablePath: ThermalLimitXTable.csv
+  ThermalLimitYTablePath: ThermalLimitYTable.csv
+  ThermalLimitZTablePath: ThermalLimitZTable.csv
+  VelocityLimitXTablePath: VelocityLimitXTable.csv
+  VelocityLimitYTablePath: VelocityLimitYTable.csv
+  VelocityLimitZTablePath: VelocityLimitZTable.csv
+  CylinderLimitPrimaryTablePath: CylinderLimitPrimaryTable.csv
+  CylinderLimitSecondaryTablePath: CylinderLimitSecondaryTable.csv
+  ForceActuatorNearZNeighborsTablePath: ForceActuatorNearNeighborZTable.csv
+  ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
+  UseInclinometer: True
+  MirrorXMoment: -65311
+  MirrorYMoment: -20000
+  MirrorZMoment: -20000
+  SetpointXMomentLowLimitFactor: -0.2
+  SetpointXMomentHighLimitFactor: 1.2
+  SetpointYMomentLowLimitFactor: -0.2
+  SetpointYMomentHighLimitFactor: 0.2
+  SetpointZMomentLowLimitFactor: -0.2
+  SetpointZMomentHighLimitFactor: 0.2
+  SetpointNearNeighborLimitFactor: 1
+  SetpointMirrorWeightLimitFactor: 1.8
+  SetpointFarNeighborLimitFactor: 0.5
+  MirrorCenterOfGravityX: -0.001121066
+  MirrorCenterOfGravityY: 0.000218726
+  MirrorCenterOfGravityZ: -1.7657086
+  RaiseIncrementPercentage: 0.05
+  LowerDecrementPercentage: 0.05
+  RaiseLowerFollowingErrorLimit: 200
+  AccelerationForceComponent:
+    MaxRateOfChange: 105.0
+    NearZeroValue: 1.0
+  ActiveOpticForceComponent:
+    MaxRateOfChange: 10.0
+    NearZeroValue: 1.0
+  AzimuthForceComponent:
+    MaxRateOfChange: 105.0
+    NearZeroValue: 1.0
+  BalanceForceComponent:
+    MaxRateOfChange: 5.0
+    NearZeroValue: 1.0
+  ElevationForceComponent:
+    MaxRateOfChange: 20.0
+    NearZeroValue: 1.0
+  OffsetForceComponent:
+    MaxRateOfChange: 20.0
+    NearZeroValue: 1.0
+  StaticForceComponent:
+    MaxRateOfChange: 105.0
+    NearZeroValue: 1.0
+  ThermalForceComponent:
+    MaxRateOfChange: 10.0
+    NearZeroValue: 1.0
+  VelocityForceComponent:
+    MaxRateOfChange: 105.0
+    NearZeroValue: 1.0
+  FinalForceComponent:
+    MaxRateOfChange: 25.0
+    NearZeroValue: 1.0
+  BumpTest:
+    TestedTolerances:
+      Warning: 2.5
+      Error: 5
+    NonTestedTolerances:
+      Warning: 20
+      Error: 100
+    SettleTime: 3.0
+    Measurements: 10
+GyroSettings:
+  DataRate: 1000
+  AxesMatrix: [1,0,0,0,1,0,0,0,1]
+  AngularVelocityXOffset: 0.0
+  AngularVelocityYOffset: 0.0
+  AngularVelocityZOffset: 0.0
+HardpointActuatorSettings:
+  HardpointDisplacementToMirrorPositionTablePath: HardpointDisplacementToMirrorPositionTable.csv
+  MirrorPositionToHardpointDisplacementTablePath: MirrorPositionToHardpointDisplacementTable.csv
+  MicrometersPerStep: 0.0607
+  MicrometersPerEncoder: 0.2442
+  HPEncoderOffsets: [29897, 30786, 53315, 61621, -21824, 35572]
+  HardpointMeasuredForceFaultHigh: 2400
+  HardpointMeasuredForceFaultLow: -2200
+  HardpointBreakawayFaultHigh: 3800
+  HardpointBreakawayFaultLow: -3800
+  HardpointMeasuredForceFSBWarningHigh: 100
+  HardpointMeasuredForceFSBWarningLow: -100
+  HardpointMeasuredForceWarningHigh: 1200
+  HardpointMeasuredForceWarningLow: -1100
+  AirPressureFaultHigh: 127
+  AirPressureFaultLow: 110
+  AirPressureFaultLowRaising: 100
+  LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
+  HighProximity: [57740, 64050, 56675, 56037, 65643, 57572]
+InclinometerSettings:
+  Offset: 0.0
+  Limits:
+    FaultLow: 100.0
+    WarningLow: 99.0
+    WarningHigh: -9.0
+    FaultHigh: -10.0
+PIDSettings:
+  Fx:
+    Timestep: 0.02
+    P: 0.204309678403032
+    I: 3.63116506150057
+    D: 0.0
+    N: 0.0
+  Fy:
+    Timestep: 0.02
+    P: 0.0190936349895327
+    I: 1.90936349895328
+    D: 0.0
+    N: 0.0
+  Fz:
+    Timestep: 0.02
+    P: 1.35400433655061
+    I: 3.87646972825983
+    D: 0.0
+    N: 0.0
+  Mx:
+    Timestep: 0.02
+    P: 1.71445275669378
+    I: 4.99165132468295
+    D: 0.0
+    N: 0.0
+  My:
+    Timestep: 0.02
+    P: 1.78691443348212
+    I: 6.25142910457108
+    D: 0.0
+    N: 0.0
+  Mz:
+    Timestep: 0.02
+    P: 0.355712659308793
+    I: 2.11474788021138
+    D: 0.0
+    N: 0.0
+PositionControllerSettings:
+  ForceToStepsCoefficient: -0.25
+  EncoderToStepsCoefficient: 4.023064250411861614497528830313
+  MaxStepsPerLoop: 60
+  Raise:
+    HPForceLimitLow: -200
+    HPForceLimitHigh: 1000
+    Timeout: 600
+  Lower:
+    HPForceLimitLow: -1000
+    HPForceLimitHigh: 200
+    Timeout: 600
+    PositionOffset: -1.5
+  ReferencePosition: [32438, 37387, 43686, 44733, 34861, 40855]
+SafetyControllerSettings:
+  AirControllerSettings:
+    FaultOnCommandOutputMismatch: On
+    FaultOnCommandSensorMismatch: Off
+    ValveTransitionTimeout: 40
+  DisplacementSettings:
+    FaultOnSensorReportsInvalidCommand: On
+    FaultOnSensorReportsCommunicationTimeoutError: On
+    FaultOnSensorReportsDataLengthError: On
+    FaultOnSensorReportsNumberOfParametersError: On
+    FaultOnSensorReportsParameterError: On
+    FaultOnSensorReportsCommunicationError: On
+    FaultOnSensorReportsIDNumberError: On
+    FaultOnSensorReportsExpansionLineError: On
+    FaultOnSensorReportsWriteControlError: On
+    FaultOnResponseTimeoutError: On
+    FaultOnInvalidLength: On
+    FaultOnInvalidResponse: On
+    FaultOnUnknownCommand: On
+    FaultOnUnknownProblem: On
+  InclinometerSettings:
+    FaultOnResponseTimeout: On
+    FaultOnInvalidCRC: On
+    FaultOnUnknownAddress: On
+    FaultOnUnknownFunction: On
+    FaultOnInvalidLength: On
+    FaultOnSensorReportsIllegalDataAddress: On
+    FaultOnSensorReportsIllegalFunction: On
+    FaultOnUnknownProblem: On
+  InterlockSettings:
+    FaultOnHeartbeatStateOutputMismatch: On
+    FaultOnAuxPowerNetworksOff: Off
+    FaultOnThermalEquipmentOff: On
+    FaultOnAirSupplyOff: Off
+    FaultOnCabinetDoorOpen: On
+    FaultOnTMAMotionStop: Off
+    FaultOnGISHeartbeatLost: On
+  ForceControllerSettings:
+    FaultOnSafetyLimit: On
+    FaultOnXMomentLimit: On
+    FaultOnYMomentLimit: On
+    FaultOnZMomentLimit: On
+    FaultOnNearNeighborCheck: On
+    FaultOnMagnitudeLimit: On
+    FaultOnFarNeighborCheck: On
+    FaultOnElevationForceClipping: Off
+    FaultOnAzimuthForceClipping: On
+    FaultOnThermalForceClipping: On
+    FaultOnBalanceForceClipping: On
+    FaultOnAccelerationForceClipping: On
+    FaultOnActiveOpticNetForceCheck: On
+    FaultOnActiveOpticForceClipping: On
+    FaultOnStaticForceClipping: On
+    FaultOnOffsetForceClipping: On
+    FaultOnVelocityForceClipping: On
+    FaultOnForceClipping: Off
+  PositionControllerSettings:
+    FollowingErrorPercentage: 110
+    FaultNumberOfFollowingErrors: 50
+    FaultOnUnstableCount: 100
+  CellLightSettings:
+    FaultOnOutputMismatch: On
+    FaultOnSensorMismatch: Off
+  PowerControllerSettings:
+    FaultOnPowerNetworkAOutputMismatch: On
+    FaultOnPowerNetworkBOutputMismatch: On
+    FaultOnPowerNetworkCOutputMismatch: On
+    FaultOnPowerNetworkDOutputMismatch: On
+    FaultOnAuxPowerNetworkAOutputMismatch: On
+    FaultOnAuxPowerNetworkBOutputMismatch: On
+    FaultOnAuxPowerNetworkCOutputMismatch: On
+    FaultOnAuxPowerNetworkDOutputMismatch: On
+  RaiseOperationSettings:
+    FaultOnTimeout: On
+  LowerOperationSettings:
+    FaultOnTimeout: On
+  AccelerometerSettings:
+    FaultOnSampleTimeout: On
+    FaultOnAngularAccelerationX: On
+    FaultOnAngularAccelerationY: On
+    FaultOnAngularAccelerationZ: On
+  ILCSettings:
+    FaultOnCommunicationTimeout: Off
+    CommunicationTimeoutCountThreshold: 3
+    CommunicationTimeoutPeriod: 5
+    FaultOnForceActuatorFollowingErrorCounting: Off
+    ForceActuatorFollowingErrorCountThreshold: 50
+    ForceActuatorFollowingErrorPeriod: 50
+    FaultOnForceActuatorFollowingErrorImmediate: Off
+    FaultOnHardpointActuatorMeasuredForce: On
+    HardpointActuatorMeasuredForceCountThreshold: 50
+    HardpointActuatorMeasuredForcePeriod: 50
+    FaultOnAirPressure: On
+    AirPressureCountThreshold: 50
+    AirPressurePeriod: 50
+  ForceActuatorFollowingError:
+    FaultOnCounting: Off
+    FaultCount: 45
+    FaultCountPeriod: 50
+    FaultOnImmediate: On
+  TMASettings:
+    AzimuthTimeout: 0.5
+    ElevationTimeout: 0.5
+    InclinometerDeviationDeg: 180
+ILCApplicationSettings:
+  ReportServerID: 835
+  ReportServerStatus: 270
+  ChangeILCMode: 335
+  BroadcastStepMotor: 300
+  UnicastStepMotor: 405
+  ElectromechanicalForceAndStatus: 300
+  BroadcastFreezeSensorValues: 192
+  SetBoostValveDCAGains: 40100
+  ReadBoostValveDCAGains: 1100
+  BroadcastForceDemand: 480
+  UnicastSingleAxisForceDemand: 305
+  UnicastDualAxisForceDemand: 310
+  PneumaticForceAndStatus: 320
+  SetADCScanRate: 310
+  SetADCChannelOffsetAndSensitivity: 36250
+  Reset: 84840
+  ReadCalibration: 1725
+  ReadDCAPressureValues: 100100
+  ReportDCAID: 385
+  ReportDCAStatus: 255
+  ReportDCAPressure: 400
+  ReportLVDT: 400
+ExpansionFPGAApplicationSettings:
+  Enabled: True
+  Resource: rio://139.229.178.185/RIO
