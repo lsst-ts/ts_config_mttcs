@@ -230,6 +230,8 @@ HardpointActuatorSettings:
   AirPressureFaultLowRaising: 100
   LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
   HighProximity: [57740, 64050, 56675, 56037, 65643, 57572]
+  IgnoreTensionRaisingLowering: 45
+  InRangeReadoutsToChaseFromWaitingTension: 50
 InclinometerSettings:
   Offset: 0.0
   Limits:
@@ -348,6 +350,7 @@ SafetyControllerSettings:
     FollowingErrorPercentage: 110
     FaultNumberOfFollowingErrors: 50
     FaultOnUnstableCount: 100
+    FaultForTensionAboveSupported: 90
   CellLightSettings:
     FaultOnOutputMismatch: On
     FaultOnSensorMismatch: Off
