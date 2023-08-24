@@ -146,6 +146,8 @@ ForceActuatorSettings:
   ForceActuatorNearZNeighborsTablePath: ForceActuatorNearNeighborZTable.csv
   ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
   UseInclinometer: True
+  UseGyroscope: False
+  UseAccelerometers: False
   MirrorXMoment: -65311
   MirrorYMoment: -20000
   MirrorZMoment: -20000
@@ -180,7 +182,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   OffsetForceComponent:
-    MaxRateOfChange: 20.0
+    MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   StaticForceComponent:
     MaxRateOfChange: 105.0
@@ -289,7 +291,7 @@ PositionControllerSettings:
 SafetyControllerSettings:
   AirControllerSettings:
     FaultOnCommandOutputMismatch: On
-    FaultOnCommandSensorMismatch: Off
+    FaultOnCommandSensorMismatch: On
     ValveTransitionTimeout: 40
   DisplacementSettings:
     FaultOnSensorReportsInvalidCommand: On
@@ -317,11 +319,11 @@ SafetyControllerSettings:
     FaultOnUnknownProblem: On
   InterlockSettings:
     FaultOnHeartbeatStateOutputMismatch: On
-    FaultOnAuxPowerNetworksOff: Off
+    FaultOnAuxPowerNetworksOff: On
     FaultOnThermalEquipmentOff: On
-    FaultOnAirSupplyOff: Off
+    FaultOnAirSupplyOff: On
     FaultOnCabinetDoorOpen: On
-    FaultOnTMAMotionStop: Off
+    FaultOnTMAMotionStop: On
     FaultOnGISHeartbeatLost: On
   ForceControllerSettings:
     FaultOnSafetyLimit: On
@@ -371,10 +373,10 @@ SafetyControllerSettings:
     FaultOnCommunicationTimeout: Off
     CommunicationTimeoutCountThreshold: 3
     CommunicationTimeoutPeriod: 5
-    FaultOnForceActuatorFollowingErrorCounting: Off
+    FaultOnForceActuatorFollowingErrorCounting: On
     ForceActuatorFollowingErrorCountThreshold: 50
     ForceActuatorFollowingErrorPeriod: 50
-    FaultOnForceActuatorFollowingErrorImmediate: Off
+    FaultOnForceActuatorFollowingErrorImmediate: On
     FaultOnHardpointActuatorMeasuredForce: On
     HardpointActuatorMeasuredForceCountThreshold: 50
     HardpointActuatorMeasuredForcePeriod: 50
