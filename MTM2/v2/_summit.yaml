@@ -1,3 +1,7 @@
 ---
 
-host: "hexrot-vm01.cp.lsst.org"
+host: "m2-crio-controller01.cp.lsst.org"
+# The ports here are the GUI's ports actually. Remove this after DM-37422 is
+# fixed.
+port_command: 50010
+port_telemetry: 50011
