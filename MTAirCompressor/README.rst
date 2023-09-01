@@ -1,1 +1,1 @@
-Configuration files for lsst.ts.MTAirCompressor.MTAirCompressorCsc
+Configuration files for lsst.ts.mtaircompressor.MTAirCompressorCsc

@@ -230,6 +230,8 @@ HardpointActuatorSettings:
   AirPressureFaultLowRaising: 100
   LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
   HighProximity: [57740, 64050, 56675, 56037, 65643, 57572]
+  IgnoreTensionRaisingLowering: 45
+  InRangeReadoutsToChaseFromWaitingTension: 50
 InclinometerSettings:
   Offset: 0.0
   Limits:
@@ -238,42 +240,80 @@ InclinometerSettings:
     WarningHigh: -9.0
     FaultHigh: -10.0
 PIDSettings:
-  Fx:
-    Timestep: 0.02
-    P: 0.204309678403032
-    I: 3.63116506150057
-    D: 0.0
-    N: 0.0
-  Fy:
-    Timestep: 0.02
-    P: 0.0190936349895327
-    I: 1.90936349895328
-    D: 0.0
-    N: 0.0
-  Fz:
-    Timestep: 0.02
-    P: 1.35400433655061
-    I: 3.87646972825983
-    D: 0.0
-    N: 0.0
-  Mx:
-    Timestep: 0.02
-    P: 1.71445275669378
-    I: 4.99165132468295
-    D: 0.0
-    N: 0.0
-  My:
-    Timestep: 0.02
-    P: 1.78691443348212
-    I: 6.25142910457108
-    D: 0.0
-    N: 0.0
-  Mz:
-    Timestep: 0.02
-    P: 0.355712659308793
-    I: 2.11474788021138
-    D: 0.0
-    N: 0.0
+  Tracking:
+    Fx:
+      Timestep: 0.02
+      P: 0.204309678403032
+      I: 3.63116506150057
+      D: 0.0
+      N: 0.0
+    Fy:
+      Timestep: 0.02
+      P: 0.0190936349895327
+      I: 1.90936349895328
+      D: 0.0
+      N: 0.0
+    Fz:
+      Timestep: 0.02
+      P: 1.35400433655061
+      I: 3.87646972825983
+      D: 0.0
+      N: 0.0
+    Mx:
+      Timestep: 0.02
+      P: 1.71445275669378
+      I: 4.99165132468295
+      D: 0.0
+      N: 0.0
+    My:
+      Timestep: 0.02
+      P: 1.78691443348212
+      I: 6.25142910457108
+      D: 0.0
+      N: 0.0
+    Mz:
+      Timestep: 0.02
+      P: 0.355712659308793
+      I: 2.11474788021138
+      D: 0.0
+      N: 0.0
+  Slewing:
+    Fx:
+      Timestep: 0.02
+      P: 0.95
+      I: 0.1
+      D: 0.0
+      N: 0.0
+    Fy:
+      Timestep: 0.02
+      P: 0.95
+      I: 0.1
+      D: 0.0
+      N: 0.0
+    Fz:
+      Timestep: 0.02
+      P: 0.95
+      I: 0.1
+      D: 0.0
+      N: 0.0
+    Mx:
+      Timestep: 0.02
+      P: 0.95
+      I: 0.1
+      D: 0.0
+      N: 0.0
+    My:
+      Timestep: 0.02
+      P: 0.95
+      I: 0.1
+      D: 0.0
+      N: 0.0
+    Mz:
+      Timestep: 0.02
+      P: 0.95
+      I: 0.1
+      D: 0.0
+      N: 0.0
 PositionControllerSettings:
   ForceToStepsCoefficient: -0.25
   EncoderToStepsCoefficient: 4.023064250411861614497528830313
@@ -348,6 +388,7 @@ SafetyControllerSettings:
     FollowingErrorPercentage: 110
     FaultNumberOfFollowingErrors: 50
     FaultOnUnstableCount: 100
+    FaultForTensionAboveSupported: 90
   CellLightSettings:
     FaultOnOutputMismatch: On
     FaultOnSensorMismatch: Off
@@ -392,6 +433,11 @@ SafetyControllerSettings:
     AzimuthTimeout: 0.5
     ElevationTimeout: 0.5
     InclinometerDeviationDeg: 180
+SlewControllerSettings:
+  TriggerBoosterValves: True
+  UseAccelerationForces: True
+  UseBalanceForces: True
+  UseVelocityForces: True
 ILCApplicationSettings:
   ReportServerID: 835
   ReportServerStatus: 270
