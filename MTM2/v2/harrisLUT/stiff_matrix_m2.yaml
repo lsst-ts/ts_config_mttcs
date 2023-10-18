@@ -1,5 +1,10 @@
 # Stiffness matrix of M2 mirror, which is copied from "StiffnessMatrix_M2.mat"
 # in "ts_mtm2_matlab_tools/ReferenceFiles/".
+
+# This is a 78 x 78 matrix. The unit of row is the Newton and the unit of
+# column is the actuator's step. This means for each actuator's movement in
+# step, what should be the force change of individual actuator (78 actuators in
+# total).
 stiff: [[
             -0.05712883394174524,
             0.006063149906871231,
