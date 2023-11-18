@@ -281,9 +281,9 @@ PIDSettings:
   Slewing:
     Fx:
       Timestep: 0.02
-      P: 1.5
+      P: 1.25
       I: 1.0
-      D: 0.0
+      D: 0.2
       N: 0.0
     Fy:
       Timestep: 0.02
