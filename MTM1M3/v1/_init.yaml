@@ -312,7 +312,7 @@ PIDSettings:
     Mz:
       Timestep: 0.02
       P: 1.5
-      I: 0.4
+      I: 0.6
       D: 0.4
       N: 0.0
 PositionControllerSettings:
@@ -389,7 +389,7 @@ SafetyControllerSettings:
     FollowingErrorPercentage: 110
     FaultNumberOfFollowingErrors: 50
     FaultOnUnstableCount: 100
-    FaultForTensionAboveSupported: 95
+    FaultForTensionAboveSupported: 99
   CellLightSettings:
     FaultOnOutputMismatch: On
     FaultOnSensorMismatch: Off
