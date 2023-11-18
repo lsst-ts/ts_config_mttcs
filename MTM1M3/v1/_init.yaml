@@ -313,7 +313,7 @@ PIDSettings:
       Timestep: 0.02
       P: 2.5
       I: 0.3
-      D: 0.4
+      D: 0.6
       N: 0.0
 PositionControllerSettings:
   ForceToStepsCoefficient: -0.25
