@@ -177,7 +177,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 105.0
     NearZeroValue: 1.0
   BalanceForceComponent:
-    MaxRateOfChange: 5.0
+    MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   ElevationForceComponent:
     MaxRateOfChange: 20.0
