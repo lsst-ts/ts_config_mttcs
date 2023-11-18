@@ -311,7 +311,7 @@ PIDSettings:
       N: 0.0
     Mz:
       Timestep: 0.02
-      P: 4.0
+      P: 10.0
       I: 1.0
       D: 0.0
       N: 0.0
