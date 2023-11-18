@@ -438,7 +438,7 @@ SlewControllerSettings:
   TriggerBoosterValves: True
   UseAccelerationForces: False
   UseBalanceForces: True
-  UseVelocityForces: True
+  UseVelocityForces: False
 ILCApplicationSettings:
   ReportServerID: 835
   ReportServerStatus: 270
