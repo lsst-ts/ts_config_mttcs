@@ -311,8 +311,8 @@ PIDSettings:
       N: 0.0
     Mz:
       Timestep: 0.02
-      P: 1.0
-      I: 1.0
+      P: 3.0
+      I: 0.5
       D: 0.0
       N: 0.0
 PositionControllerSettings:
