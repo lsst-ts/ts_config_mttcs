@@ -1,46 +1,46 @@
 AccelerometerSettings:
   AngularAccelerationXDistance: 0.9478
   AngularAccelerationYDistance: 0.7565
-  AngularAccelerationZDistance: 4.2500
+  AngularAccelerationZDistance: 10.0
   Accelerometer1:
-    Bias: 0.009
-    Sensitivity: .1993
-    Offset: 0.011519981
-    Scalar: 1.0
+    Bias: -0.045
+    Sensitivity: 2.0
+    Offset: 0
+    Scalar: 1
   Accelerometer2:
-    Bias: 0.0039
-    Sensitivity: 1.994
-    Offset: 0.007553103
+    Bias: -0.002
+    Sensitivity: 1.984
+    Offset: 0
     Scalar: 1.0
   Accelerometer3:
-    Bias: 0.0125
-    Sensitivity: 1.994
-    Offset: 0.086111715
+    Bias: -0.12
+    Sensitivity: 2.0
+    Offset: 0
     Scalar: 1.0
   Accelerometer4:
-    Bias: 0.0007
-    Sensitivity: 1.995
-    Offset: 0.156193491
+    Bias: +0.074
+    Sensitivity: 1.967
+    Offset: 0
     Scalar: 1.0
   Accelerometer5:
-    Bias: 0.0146
-    Sensitivity: 1.997
-    Offset: -0.141127269
+    Bias: +0.090
+    Sensitivity: 2.0
+    Offset: 0
     Scalar: 1.0
   Accelerometer6:
-    Bias: 0.017
-    Sensitivity: 1.996
-    Offset: 0.00167552
+    Bias: +0.02
+    Sensitivity: 2.0
+    Offset: 0
     Scalar: 1.0
   Accelerometer7:
-    Bias: -0.0108
-    Sensitivity: 1.994
-    Offset: -0.010106905
+    Bias: -0.003
+    Sensitivity: 2.0
+    Offset: 0
     Scalar: 1.0
   Accelerometer8:
-    Bias: 0.0179
-    Sensitivity: 1.992
-    Offset: -0.075325936
+    Bias: +0.055
+    Sensitivity: 2.0
+    Offset: 0
     Scalar: 1.0
   Limits:
     AngularAccelerationX:
@@ -82,7 +82,8 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: [410]
+  #DisabledActuators: [115,340,410]
+  DisabledActuators: []
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -147,15 +148,16 @@ ForceActuatorSettings:
   ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
   UseInclinometer: True
   UseGyroscope: False
+  UseAccelerometers: False
   MirrorXMoment: -65311
   MirrorYMoment: -20000
   MirrorZMoment: -20000
-  SetpointXMomentLowLimitFactor: -0.2
+  SetpointXMomentLowLimitFactor: -1.0
   SetpointXMomentHighLimitFactor: 1.2
-  SetpointYMomentLowLimitFactor: -0.2
-  SetpointYMomentHighLimitFactor: 0.2
-  SetpointZMomentLowLimitFactor: -0.2
-  SetpointZMomentHighLimitFactor: 0.2
+  SetpointYMomentLowLimitFactor: -1.0
+  SetpointYMomentHighLimitFactor: 1.0
+  SetpointZMomentLowLimitFactor: -1.0
+  SetpointZMomentHighLimitFactor: 1.0
   SetpointNearNeighborLimitFactor: 1
   SetpointMirrorWeightLimitFactor: 1.8
   SetpointFarNeighborLimitFactor: 0.5
@@ -166,7 +168,7 @@ ForceActuatorSettings:
   LowerDecrementPercentage: 0.05
   RaiseLowerFollowingErrorLimit: 200
   AccelerationForceComponent:
-    MaxRateOfChange: 105.0
+    MaxRateOfChange: 50.0
     NearZeroValue: 1.0
   ActiveOpticForceComponent:
     MaxRateOfChange: 10.0
@@ -190,7 +192,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   VelocityForceComponent:
-    MaxRateOfChange: 105.0
+    MaxRateOfChange: 50.0
     NearZeroValue: 1.0
   FinalForceComponent:
     MaxRateOfChange: 25.0
@@ -217,7 +219,7 @@ HardpointActuatorSettings:
   MicrometersPerEncoder: 0.2442
   HPEncoderOffsets: [29897, 30786, 53315, 61621, -21824, 35572]
   HardpointMeasuredForceFaultHigh: 2400
-  HardpointMeasuredForceFaultLow: -2200
+  HardpointMeasuredForceFaultLow: -3600
   HardpointBreakawayFaultHigh: 3800
   HardpointBreakawayFaultLow: -3800
   HardpointMeasuredForceFSBWarningHigh: 100
@@ -229,6 +231,8 @@ HardpointActuatorSettings:
   AirPressureFaultLowRaising: 100
   LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
   HighProximity: [57740, 64050, 56675, 56037, 65643, 57572]
+  IgnoreTensionRaisingLowering: 45
+  InRangeReadoutsToChaseFromWaitingTension: 50
 InclinometerSettings:
   Offset: 0.0
   Limits:
@@ -237,42 +241,80 @@ InclinometerSettings:
     WarningHigh: -9.0
     FaultHigh: -10.0
 PIDSettings:
-  Fx:
-    Timestep: 0.02
-    P: 0.204309678403032
-    I: 3.63116506150057
-    D: 0.0
-    N: 0.0
-  Fy:
-    Timestep: 0.02
-    P: 0.0190936349895327
-    I: 1.90936349895328
-    D: 0.0
-    N: 0.0
-  Fz:
-    Timestep: 0.02
-    P: 1.35400433655061
-    I: 3.87646972825983
-    D: 0.0
-    N: 0.0
-  Mx:
-    Timestep: 0.02
-    P: 1.71445275669378
-    I: 4.99165132468295
-    D: 0.0
-    N: 0.0
-  My:
-    Timestep: 0.02
-    P: 1.78691443348212
-    I: 6.25142910457108
-    D: 0.0
-    N: 0.0
-  Mz:
-    Timestep: 0.02
-    P: 0.355712659308793
-    I: 2.11474788021138
-    D: 0.0
-    N: 0.0
+  Tracking:
+    Fx:
+      Timestep: 0.02
+      P: 0.204309678403032
+      I: 3.63116506150057
+      D: 0.0
+      N: 0.0
+    Fy:
+      Timestep: 0.02
+      P: 0.0190936349895327
+      I: 1.90936349895328
+      D: 0.0
+      N: 0.0
+    Fz:
+      Timestep: 0.02
+      P: 1.35400433655061
+      I: 3.87646972825983
+      D: 0.0
+      N: 0.0
+    Mx:
+      Timestep: 0.02
+      P: 1.71445275669378
+      I: 4.99165132468295
+      D: 0.0
+      N: 0.0
+    My:
+      Timestep: 0.02
+      P: 1.78691443348212
+      I: 6.25142910457108
+      D: 0.0
+      N: 0.0
+    Mz:
+      Timestep: 0.02
+      P: 0.355712659308793
+      I: 2.11474788021138
+      D: 0.0
+      N: 0.0
+  Slewing:
+    Fx:
+      Timestep: 0.02
+      P: 0.0
+      I: 0.0
+      D: 0.0
+      N: 0.0
+    Fy:
+      Timestep: 0.02
+      P: 1.5
+      I: 1.0
+      D: 0.0
+      N: 0.0
+    Fz:
+      Timestep: 0.02
+      P: 1.5
+      I: 1.0
+      D: 0.1
+      N: 0.0
+    Mx:
+      Timestep: 0.02
+      P: 2.0
+      I: 0.4
+      D: 0.6
+      N: 0.0
+    My:
+      Timestep: 0.02
+      P: 1.0
+      I: 0.2
+      D: 0.0
+      N: 0.0
+    Mz:
+      Timestep: 0.02
+      P: 1.0
+      I: 0.2
+      D: 0.0
+      N: 0.0
 PositionControllerSettings:
   ForceToStepsCoefficient: -0.25
   EncoderToStepsCoefficient: 4.023064250411861614497528830313
@@ -290,7 +332,7 @@ PositionControllerSettings:
 SafetyControllerSettings:
   AirControllerSettings:
     FaultOnCommandOutputMismatch: On
-    FaultOnCommandSensorMismatch: On
+    FaultOnCommandSensorMismatch: Off
     ValveTransitionTimeout: 40
   DisplacementSettings:
     FaultOnSensorReportsInvalidCommand: On
@@ -306,7 +348,7 @@ SafetyControllerSettings:
     FaultOnInvalidLength: On
     FaultOnInvalidResponse: On
     FaultOnUnknownCommand: On
-    FaultOnUnknownProblem: On
+    FaultOnUnknownProblem: Off
   InclinometerSettings:
     FaultOnResponseTimeout: On
     FaultOnInvalidCRC: On
@@ -318,12 +360,12 @@ SafetyControllerSettings:
     FaultOnUnknownProblem: On
   InterlockSettings:
     FaultOnHeartbeatStateOutputMismatch: On
-    FaultOnAuxPowerNetworksOff: On
+    FaultOnAuxPowerNetworksOff: Off
     FaultOnThermalEquipmentOff: On
-    FaultOnAirSupplyOff: On
+    FaultOnAirSupplyOff: Off
     FaultOnCabinetDoorOpen: On
     FaultOnTMAMotionStop: On
-    FaultOnGISHeartbeatLost: On
+    FaultOnGISHeartbeatLost: Off
   ForceControllerSettings:
     FaultOnSafetyLimit: On
     FaultOnXMomentLimit: On
@@ -347,6 +389,7 @@ SafetyControllerSettings:
     FollowingErrorPercentage: 110
     FaultNumberOfFollowingErrors: 50
     FaultOnUnstableCount: 100
+    FaultForTensionAboveSupported: 95
   CellLightSettings:
     FaultOnOutputMismatch: On
     FaultOnSensorMismatch: Off
@@ -375,7 +418,7 @@ SafetyControllerSettings:
     FaultOnForceActuatorFollowingErrorCounting: On
     ForceActuatorFollowingErrorCountThreshold: 50
     ForceActuatorFollowingErrorPeriod: 50
-    FaultOnForceActuatorFollowingErrorImmediate: On
+    FaultOnForceActuatorFollowingErrorImmediate: Off
     FaultOnHardpointActuatorMeasuredForce: On
     HardpointActuatorMeasuredForceCountThreshold: 50
     HardpointActuatorMeasuredForcePeriod: 50
@@ -388,9 +431,14 @@ SafetyControllerSettings:
     FaultCountPeriod: 50
     FaultOnImmediate: On
   TMASettings:
-    AzimuthTimeout: 0.5
-    ElevationTimeout: 0.5
+    AzimuthTimeout: -1
+    ElevationTimeout: -1
     InclinometerDeviationDeg: 180
+SlewControllerSettings:
+  TriggerBoosterValves: True
+  UseAccelerationForces: False
+  UseBalanceForces: True
+  UseVelocityForces: True
 ILCApplicationSettings:
   ReportServerID: 835
   ReportServerStatus: 270
