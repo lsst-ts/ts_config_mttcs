@@ -151,7 +151,7 @@ ForceActuatorSettings:
   UseAccelerometers: False
   MirrorXMoment: -65311
   MirrorYMoment: -20000
-  MirrorZMoment: -20000
+  MirrorZMoment: -30000
   SetpointXMomentLowLimitFactor: -1.0
   SetpointXMomentHighLimitFactor: 1.2
   SetpointYMomentLowLimitFactor: -1.0
