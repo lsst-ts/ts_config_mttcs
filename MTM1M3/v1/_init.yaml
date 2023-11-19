@@ -83,7 +83,7 @@ ForceActuatorSettings:
       OpenZ: 0.2
       CloseZ: 0.15
   #DisabledActuators: [115,340,410]
-  DisabledActuators: []
+  DisabledActuators: [340]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
