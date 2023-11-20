@@ -436,7 +436,7 @@ SafetyControllerSettings:
     InclinometerDeviationDeg: 180
 SlewControllerSettings:
   TriggerBoosterValves: True
-  UseAccelerationForces: True
+  UseAccelerationForces: False
   UseBalanceForces: True
   UseVelocityForces: False
 ILCApplicationSettings:
