@@ -1,7 +1,7 @@
 AccelerometerSettings:
   AngularAccelerationXDistance: 0.9478
   AngularAccelerationYDistance: 0.7565
-  AngularAccelerationZDistance: 10.0
+  AngularAccelerationZDistance: 50.0
   Accelerometer1:
     Bias: -0.045
     Sensitivity: 2.0
@@ -148,7 +148,7 @@ ForceActuatorSettings:
   ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
   UseInclinometer: True
   UseGyroscope: False
-  UseAccelerometers: False
+  UseAccelerometers: True
   MirrorXMoment: -65311
   MirrorYMoment: -20000
   MirrorZMoment: -30000
