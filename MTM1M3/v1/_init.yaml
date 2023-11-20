@@ -148,7 +148,7 @@ ForceActuatorSettings:
   ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
   UseInclinometer: True
   UseGyroscope: False
-  UseAccelerometers: False
+  UseAccelerometers: True
   MirrorXMoment: -65311
   MirrorYMoment: -20000
   MirrorZMoment: -30000
@@ -436,7 +436,7 @@ SafetyControllerSettings:
     InclinometerDeviationDeg: 180
 SlewControllerSettings:
   TriggerBoosterValves: True
-  UseAccelerationForces: False
+  UseAccelerationForces: True
   UseBalanceForces: True
   UseVelocityForces: False
 ILCApplicationSettings:
