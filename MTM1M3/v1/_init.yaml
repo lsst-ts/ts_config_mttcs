@@ -3,43 +3,43 @@ AccelerometerSettings:
   AngularAccelerationYDistance: 0.7565
   AngularAccelerationZDistance: 50.0
   Accelerometer1:
-    Bias: -0.045
-    Sensitivity: 2.0
+    Bias: 0.0090
+    Sensitivity: 1.993
     Offset: 0
     Scalar: 1
   Accelerometer2:
-    Bias: -0.002
-    Sensitivity: 1.984
+    Bias: 0.0039
+    Sensitivity: 1.994
     Offset: 0
     Scalar: 1.0
   Accelerometer3:
-    Bias: -0.12
-    Sensitivity: 2.0
+    Bias: 0.0125
+    Sensitivity: 1.994
     Offset: 0
     Scalar: 1.0
   Accelerometer4:
-    Bias: +0.074
-    Sensitivity: 1.967
+    Bias: 0.0007
+    Sensitivity: 1.995
     Offset: 0
     Scalar: 1.0
   Accelerometer5:
-    Bias: +0.090
-    Sensitivity: 2.0
+    Bias: 0.0146
+    Sensitivity: 1.997
     Offset: 0
     Scalar: 1.0
   Accelerometer6:
-    Bias: +0.02
-    Sensitivity: 2.0
+    Bias: 0.0170
+    Sensitivity: 1.996
     Offset: 0
     Scalar: 1.0
   Accelerometer7:
-    Bias: -0.003
-    Sensitivity: 2.0
+    Bias: -0.0108
+    Sensitivity: 1.994
     Offset: 0
     Scalar: 1.0
   Accelerometer8:
-    Bias: +0.055
-    Sensitivity: 2.0
+    Bias: 0.0179
+    Sensitivity: 1.992
     Offset: 0
     Scalar: 1.0
   Limits:
