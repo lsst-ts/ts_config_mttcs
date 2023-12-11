@@ -1,12 +1,16 @@
 AccelerometerSettings:
   AngularAccelerationXDistance: 0.9478
   AngularAccelerationYDistance: 0.7565
-  AngularAccelerationZDistance: 50.0
+  AngularAccelerationZDistance: 4.2500
+  # fit from ./utils/dcelevation 2023-12-05T19:23:00.000 2023-12-05T19:28:00.000
+  XElevationPoly: [1.041348515284661,-1.560912300014318,0.336533840122548]
+  YElevationPoly: [8.502798647395398,-5.543970171583195,-3.20452575899812]
+  ZElevationPoly: [0.9898917576674895,-3.3506778044607715,0.012744914419524212]
   Accelerometer1:
     Bias: 0.0090
     Sensitivity: 1.993
     Offset: 0
-    Scalar: 1
+    Scalar: 1.0
   Accelerometer2:
     Bias: 0.0039
     Sensitivity: 1.994
@@ -83,7 +87,7 @@ ForceActuatorSettings:
       OpenZ: 0.2
       CloseZ: 0.15
   #DisabledActuators: [115,340,410]
-  DisabledActuators: [340]
+  DisabledActuators: [340,422,108,310]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -361,10 +365,10 @@ SafetyControllerSettings:
   InterlockSettings:
     FaultOnHeartbeatStateOutputMismatch: On
     FaultOnAuxPowerNetworksOff: Off
-    FaultOnThermalEquipmentOff: On
+    FaultOnThermalEquipmentOff: Off
     FaultOnAirSupplyOff: Off
     FaultOnCabinetDoorOpen: On
-    FaultOnTMAMotionStop: On
+    FaultOnTMAMotionStop: Off
     FaultOnGISHeartbeatLost: Off
   ForceControllerSettings:
     FaultOnSafetyLimit: On
