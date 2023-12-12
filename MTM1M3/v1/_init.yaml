@@ -3,9 +3,9 @@ AccelerometerSettings:
   AngularAccelerationYDistance: 0.7565
   AngularAccelerationZDistance: 4.2500
   # fit from ./utils/dcelevation 2023-12-05T19:23:00.000 2023-12-05T19:28:00.000
-  XElevationPoly: [1.041348515284661,-1.560912300014318,0.336533840122548]
-  YElevationPoly: [8.502798647395398,-5.543970171583195,-3.20452575899812]
-  ZElevationPoly: [0.9898917576674895,-3.3506778044607715,0.012744914419524212]
+  XElevationPoly: [0, 0, 0]
+  YElevationPoly: [0, 0, 0]
+  ZElevationPoly: [0, 0, 0]
   Accelerometer1:
     Bias: 0.0090
     Sensitivity: 1.993
