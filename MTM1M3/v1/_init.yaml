@@ -2,10 +2,10 @@ AccelerometerSettings:
   AngularAccelerationXDistance: 0.9478
   AngularAccelerationYDistance: 0.7565
   AngularAccelerationZDistance: 4.2500
-  # fit from ./utils/dcelevation 2023-12-05T19:23:00.000 2023-12-05T19:28:00.000
-  XElevationPoly: [0, 0, 0]
-  YElevationPoly: [0, 0, 0]
-  ZElevationPoly: [0, 0, 0]
+  # fit from ./utils/dcelevation 2023-12-12T02:13:00.000 2023-12-12T02:15:00.000
+  XElevationPoly: [0.38949484103608056,-0.025085314732613932,-0.0001312309672607185]
+  YElevationPoly: [16.29382334316596,0.019088107247665388,-0.00162040399077016]
+  ZElevationPoly: [3.714842626710499,-0.07948185353058479,2.5734299736308308e-05]
   Accelerometer1:
     Bias: 0.0090
     Sensitivity: 1.993
@@ -441,7 +441,7 @@ SafetyControllerSettings:
 SlewControllerSettings:
   TriggerBoosterValves: True
   UseAccelerationForces: False
-  UseBalanceForces: True
+  UseBalanceForces: False
   UseVelocityForces: False
 ILCApplicationSettings:
   ReportServerID: 835
