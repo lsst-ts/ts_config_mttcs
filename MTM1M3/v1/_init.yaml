@@ -3,9 +3,10 @@ AccelerometerSettings:
   AngularAccelerationYDistance: 0.7565
   AngularAccelerationZDistance: 4.2500
   # fit from ./utils/dcelevation 2023-12-12T02:13:00.000 2023-12-12T02:15:00.000
-  XElevationPoly: [-0.38949484103608056,0.025085314732613932,0.0001312309672607185]
-  YElevationPoly: [16.29382334316596,0.019088107247665388,-0.00162040399077016]
-  ZElevationPoly: [3.714842626710499,-0.07948185353058479,2.5734299736308308e-05]
+  # added fit from ./utils/dcelevation 2023-12-23T00:27:55.000 2023-12-23T01:25:26.000
+  XElevationPoly: [-0.5021856583947519,0.05410734354936267,-0.00019386538309768052]
+  YElevationPoly: [16.392270416059638,0.008628944189493771,-0.0015573249623095963]
+  ZElevationPoly: [3.819025519458613,-0.08392545285296889,5.9561802587526e-05]
   Accelerometer1:
     Bias: 0.0090
     Sensitivity: 1.993
@@ -62,7 +63,7 @@ AccelerometerSettings:
       WarningLow: -9000
       WarningHigh: 9000
       FaultHigh: 9000
-  RawDumpPath: "/home/admin/rawdc/%FT%T.rdca"
+  RawDumpPath: "/home/m1m3/rawdc/%FT%T.rdca"
 DisplacementSensorSettings:
   PositionTablePath: DisplacementSensorTable.csv
   NPorts: [0, 1, 2, 3, 4, 5, 6, 7]
@@ -88,7 +89,7 @@ ForceActuatorSettings:
       OpenZ: 0.2
       CloseZ: 0.15
   #DisabledActuators: [115,340,410]
-  DisabledActuators: [340,422,108,310]
+  DisabledActuators: [105,340]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
