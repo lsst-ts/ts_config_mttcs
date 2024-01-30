@@ -7,6 +7,8 @@ instances:
       - CAM
       - M1M3
       - M2
+      - TMA_CENTRAL
+      - TMA_UPPER
     num_iterations: 1
     num_samples: 1
     randomize_points: false
