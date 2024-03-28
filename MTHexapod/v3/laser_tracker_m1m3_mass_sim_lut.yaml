@@ -1,7 +1,5 @@
 # This configuration file Elevation LUT was generated with Laser Tracker data
 # taken on 2024-03-10 19:48:00Z - 22:20:00Z with BLOCK-247
-compensation_interval: 0.2
-connection_timeout: 10
 camera_config:
   # Fit from data taken on 2024-03-10 19:48:00Z - 22:20:00Z with BLOCK-247
   # First iterative improvement from last commit 0513b27 on 2020-08-04
@@ -68,8 +66,6 @@ camera_config:
   - 0.00033
   min_temperature: -20
   max_temperature: 20
-  host: localhost
-  port: 5560
 m2_config:
   # Fit from data taken on 2024-03-10 19:48:00Z - 22:20:00Z with BLOCK-247
   # First iterative improvement from last commit 0513b27 on 2020-08-04
@@ -136,6 +132,4 @@ m2_config:
   - 0.00013
   min_temperature: -20
   max_temperature: 20
-  host: localhost
-  port: 5550
 
