@@ -1,5 +1,8 @@
 ---
 
+# See the "_init.yaml" for the details. The settings listed here will overwrite
+# the values in "_init.yaml".
+
 host: "m2-crio-controller01.cp.lsst.org"
 # The ports here are the GUI's ports actually. Remove this after DM-37422 is
 # fixed.
