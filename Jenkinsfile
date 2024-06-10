@@ -1,7 +1,7 @@
-@Library('JenkinsShared')_
+@Library('JenkinsShared@tickets/DM-44299_2')_
 DevelopPipeline(
     name: "ts_config_mttcs",
-    idl_names: [], 
+    idl_names: [],
     module_name: "",
     has_doc_site: false,
     extra_packages: [
