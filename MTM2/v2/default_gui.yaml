@@ -4,7 +4,6 @@
 host: "m2-crio-controller02.cp.lsst.org"
 
 # Host name of the M2 cRIO simulator.
-# host_crio_simulator: "m2-crio-simulator.ls.lsst.org"   # cRIO-9038 at base data center
 host_crio_simulator: "m2-crio-controller01.cp.lsst.org"  # cRIO-9049 as the teststand
 
 # Command port number of the M2 controller.
