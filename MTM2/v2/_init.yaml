@@ -14,7 +14,7 @@ port_telemetry: 50001
 
 # System configuration file. This should be in the "configurationFiles" event
 # defined in the ts_xml.
-configuration_file: "Configurable_File_Description_20180831T092423_surrogate_optical.csv"
+configuration_file: "Configurable_File_Description_20180831T091922_M2_optical.csv"
 
 # 0-based hardpoints. The index should be from low to high.
 hardpoints: [5, 15, 25, 73, 75, 77]
