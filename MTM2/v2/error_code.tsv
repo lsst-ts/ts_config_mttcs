@@ -26,7 +26,7 @@ Code	Summary	Status	Source	State	Cause of Error	Comment
 6078	Displacement Sensor Out of Range	Warning	Sensor Range	Unchanged	Sensor value out of range	Range not programmable (check for reasonableness)
 6079	Inclinometer Out of Range	Fault	Sensor Range	Fault State	Sensor value out of range	Range not programmable (check for reasonableness)
 6080	Mirror Temperature Sensor Out of Range [Fault]	Fault	Sensor Range	Fault State	Sensor value out of range	Range not programmable (check for reasonableness)
-1024	*** Reserved ***	X	X	X	This fault code is reserved for future expansion	X
+6081	Mirror Temperature Sensor Out of Range [Warning]	Warning	Sensor Range	Unchanged	Sensor value out of range	Range not programmable (check for reasonableness)
 6082	Airflow Temperature Sensor Out of Range	Warning	Sensor Range	Unchanged	Sensor value out of range	Range not programmable (check for reasonableness)
 6083	Axial Actuator Encoder Out of Range	Fault	Sensor Range	Fault State	Sensor value out of range	Range not programmable (check for reasonableness)
 6084	Tangent Actuator Encoder Out of Range	Fault	Sensor Range	Fault State	Sensor value out of range	Range not programmable (check for reasonableness)
