@@ -19,6 +19,10 @@ configuration_file: "Configurable_File_Description_20180831T091922_M2_optical.cs
 # 0-based hardpoints. The index should be from low to high.
 hardpoints: [5, 15, 25, 73, 75, 77]
 
+# Use temperature LUT to compensate mirror deformations caused by temperature
+# gradients or not.
+enable_lut_temperature: False
+
 # Inclination source used in the look-up table calculation:
 # 1: OnBoard. 2: MTMount. See the enum 'MTM2.InclinationTelemetrySource' in
 # ts_xml.
