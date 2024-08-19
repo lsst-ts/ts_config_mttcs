@@ -3,3 +3,8 @@ num_ccw_following_errors: 3
 host: localhost
 port: 5570
 connection_timeout: 10
+vibration_detection_period: 15.0
+vibration_range: [0.3, 0.7]
+vibration_max_times: 4
+vibration_snr: 10.0
+vibration_threshold: 0.001
