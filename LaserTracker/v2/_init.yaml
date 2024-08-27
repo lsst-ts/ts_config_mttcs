@@ -7,13 +7,13 @@ instances:
       m2:
         x: 0.0
         y: 0.0
-        z: 0.0
+        z: 6.95658
         u: 0.0
         v: 0.0
       camera:
         x: 0.0
         y: 0.0
-        z: 0.0
+        z: 4.06051
         u: 0.0
         v: 0.0
     targets:
