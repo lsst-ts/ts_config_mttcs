@@ -90,7 +90,7 @@ ForceActuatorSettings:
       OpenZ: 0.2
       CloseZ: 0.15
   #DisabledActuators: [115,340,410]
-  DisabledActuators: [105,340]
+  DisabledActuators: [105,311,4368]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -169,13 +169,16 @@ ForceActuatorSettings:
   SetpointMirrorWeightLimitFactor: 1.8
   SetpointFarNeighborLimitFactor: 0.5
   MirrorCenterOfGravityX: -0.001121066
+  # MirrorCenterOfGravityX: -0.0245
   MirrorCenterOfGravityY: 0.000218726
+  # MirrorCenterOfGravityY: 0.02
   MirrorCenterOfGravityZ: -1.7657086
+  # MirrorCenterOfGravityZ: -1.786
   RaiseIncrementPercentage: 0.05
   LowerDecrementPercentage: 0.05
   RaiseLowerFollowingErrorLimit: 200
   AccelerationForceComponent:
-    MaxRateOfChange: 50.0
+    MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   ActiveOpticForceComponent:
     MaxRateOfChange: 10.0
@@ -199,7 +202,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   VelocityForceComponent:
-    MaxRateOfChange: 50.0
+    MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   FinalForceComponent:
     MaxRateOfChange: 55.0
@@ -214,7 +217,7 @@ ForceActuatorSettings:
     SettleTime: 3.0
     Measurements: 10
 GyroSettings:
-  DataRate: 1000
+  DataRate: 50
   AxesMatrix: [1,0,0,0,1,0,0,0,1]
   AngularVelocityXOffset: 0.0
   AngularVelocityYOffset: 0.0
@@ -329,11 +332,11 @@ PositionControllerSettings:
   Raise:
     HPForceLimitLow: -200
     HPForceLimitHigh: 1000
-    Timeout: 600
+    Timeout: 800
   Lower:
     HPForceLimitLow: -1000
     HPForceLimitHigh: 200
-    Timeout: 600
+    Timeout: 800
     PositionOffset: -1.5
   ReferencePosition: [32438, 37387, 43686, 44733, 34861, 40855]
 SafetyControllerSettings:
@@ -357,7 +360,7 @@ SafetyControllerSettings:
     FaultOnUnknownCommand: On
     FaultOnUnknownProblem: Off
   InclinometerSettings:
-    FaultOnResponseTimeout: On
+    FaultOnResponseTimeout: Off
     FaultOnInvalidCRC: On
     FaultOnUnknownAddress: On
     FaultOnUnknownFunction: On
@@ -366,11 +369,11 @@ SafetyControllerSettings:
     FaultOnSensorReportsIllegalFunction: On
     FaultOnUnknownProblem: On
   InterlockSettings:
-    FaultOnHeartbeatStateOutputMismatch: On
+    FaultOnHeartbeatStateOutputMismatch: Off
     FaultOnAuxPowerNetworksOff: Off
     FaultOnThermalEquipmentOff: Off
     FaultOnAirSupplyOff: Off
-    FaultOnCabinetDoorOpen: On
+    FaultOnCabinetDoorOpen: Off
     FaultOnTMAMotionStop: Off
     FaultOnGISHeartbeatLost: Off
   ForceControllerSettings:
