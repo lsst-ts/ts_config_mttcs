@@ -89,8 +89,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  #DisabledActuators: [115,340,410]
-  DisabledActuators: [105,311,4368]
+  DisabledActuators: []
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -354,11 +353,11 @@ SafetyControllerSettings:
     FaultOnSensorReportsIDNumberError: On
     FaultOnSensorReportsExpansionLineError: On
     FaultOnSensorReportsWriteControlError: On
-    FaultOnResponseTimeoutError: On
+    FaultOnResponseTimeoutError: Off
     FaultOnInvalidLength: On
     FaultOnInvalidResponse: On
     FaultOnUnknownCommand: On
-    FaultOnUnknownProblem: Off
+    FaultOnUnknownProblem: On
   InclinometerSettings:
     FaultOnResponseTimeout: Off
     FaultOnInvalidCRC: On
@@ -369,13 +368,13 @@ SafetyControllerSettings:
     FaultOnSensorReportsIllegalFunction: On
     FaultOnUnknownProblem: On
   InterlockSettings:
-    FaultOnHeartbeatStateOutputMismatch: Off
-    FaultOnAuxPowerNetworksOff: Off
-    FaultOnThermalEquipmentOff: Off
-    FaultOnAirSupplyOff: Off
+    FaultOnHeartbeatStateOutputMismatch: On
+    FaultOnAuxPowerNetworksOff: On
+    FaultOnThermalEquipmentOff: On
+    FaultOnAirSupplyOff: On
     FaultOnCabinetDoorOpen: Off
-    FaultOnTMAMotionStop: Off
-    FaultOnGISHeartbeatLost: Off
+    FaultOnTMAMotionStop: On
+    FaultOnGISHeartbeatLost: On
   ForceControllerSettings:
     FaultOnSafetyLimit: On
     FaultOnXMomentLimit: On
