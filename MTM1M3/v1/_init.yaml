@@ -337,7 +337,9 @@ PositionControllerSettings:
     HPForceLimitHigh: 200
     Timeout: 800
     PositionOffset: -1.5
-  ReferencePosition: [32438, 37387, 43686, 44733, 34861, 40855]
+  ReferencePosition: [30333, 42797, 42718, 40908, 41324, 42659]
+  # ReferencePosition: [29282, 41366, 41808, 39999, 39893, 41608]
+  # ReferencePosition: [32438, 37387, 43686, 44733, 34861, 40855]
 SafetyControllerSettings:
   AirControllerSettings:
     FaultOnCommandOutputMismatch: On
