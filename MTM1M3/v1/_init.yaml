@@ -5,48 +5,51 @@ AccelerometerSettings:
   # fit from ./utils/dcelevation 2023-12-12T02:13:00.000 2023-12-12T02:15:00.000
   # added fit from ./utils/dcelevation 2023-12-23T00:27:55.000 2023-12-23T01:25:26.000
   # added fit from ./utils/dcelevation 2023-12-29T20:24:00.000 2023-12-29T21:21:55.000
-  XElevationPoly: [-0.2835926915722871,0.05426859215809529,-0.00019564257750704983]
-  YElevationPoly: [16.05801528962445,0.012654617080407592,-0.0015881671212120377]
-  ZElevationPoly: [3.832608198134564,-0.08414138752669188,6.161078359665699e-05]
+  XElevationPoly: [0,0,0]
+  YElevationPoly: [0,0,0]
+  ZElevationPoly: [0,0,0]
+  # XElevationPoly: [-0.2835926915722871,0.05426859215809529,-0.00019564257750704983]
+  # YElevationPoly: [16.05801528962445,0.012654617080407592,-0.0015881671212120377]
+  # ZElevationPoly: [3.832608198134564,-0.08414138752669188,6.161078359665699e-05]
   Accelerometer1:
     Bias: 0.0090
     Sensitivity: 1.993
-    Offset: 0
+    Offset: +0.0875
     Scalar: 1.0
   Accelerometer2:
     Bias: 0.0039
     Sensitivity: 1.994
-    Offset: 0
+    Offset: +0.059
     Scalar: 1.0
   Accelerometer3:
     Bias: 0.0125
     Sensitivity: 1.994
-    Offset: 0
+    Offset: +0.1345
     Scalar: 1.0
   Accelerometer4:
     Bias: 0.0007
     Sensitivity: 1.995
-    Offset: 0
+    Offset: +0.144
     Scalar: 1.0
   Accelerometer5:
     Bias: 0.0146
     Sensitivity: 1.997
-    Offset: 0
+    Offset: -0.145
     Scalar: 1.0
   Accelerometer6:
     Bias: 0.0170
     Sensitivity: 1.996
-    Offset: 0
+    Offset: +0.045
     Scalar: 1.0
   Accelerometer7:
     Bias: -0.0108
     Sensitivity: 1.994
-    Offset: 0
+    Offset: -0.019
     Scalar: 1.0
   Accelerometer8:
     Bias: 0.0179
     Sensitivity: 1.992
-    Offset: 0
+    Offset: -0.034
     Scalar: 1.0
   Limits:
     AngularAccelerationX:
@@ -69,12 +72,24 @@ DisplacementSensorSettings:
   PositionTablePath: DisplacementSensorTable.csv
   NPorts: [0, 1, 2, 3, 4, 5, 6, 7]
   NOffsets: [0, 0, 0, 0, 0, 0, 0, 0]
-  XPositionOffset: -0.0270672
-  YPositionOffset: -0.0222757
-  ZPositionOffset: -0.030693524
-  XRotationOffset: +0.000017590
-  YRotationOffset: +0.000161836
-  ZRotationOffset: +0.000459137
+  XPositionOffset: -0.0323039
+  YPositionOffset: -0.0285760
+  ZPositionOffset: -0.0288697
+  XRotationOffset: -0.01250727
+  YRotationOffset: -0.00226465
+  ZRotationOffset: +0.02497025
+  # XPositionOffset: -0.0167772
+  # YPositionOffset: -0.0204809
+  # ZPositionOffset: -0.0292075
+  # XRotationOffset: -0.00921018
+  # YRotationOffset: +0.00935628
+  # ZRotationOffset: -0.02441030
+  # XPositionOffset: -0.0270672
+  # YPositionOffset: -0.0222757
+  # ZPositionOffset: -0.030693524
+  # XRotationOffset: +0.000017590
+  # YRotationOffset: +0.000161836
+  # ZRotationOffset: +0.000459137
 ForceActuatorSettings:
   BoosterValveControl:
     FollowingError:
@@ -89,7 +104,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: []
+  DisabledActuators: [227,435]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -337,8 +352,12 @@ PositionControllerSettings:
     HPForceLimitHigh: 200
     Timeout: 800
     PositionOffset: -1.5
-  ReferencePosition: [30333, 42797, 42718, 40908, 41324, 42659]
-  # ReferencePosition: [29282, 41366, 41808, 39999, 39893, 41608]
+  ReferencePosition: [29001,41744,39237,36723,36410,38657]
+  # ReferencePosition: [31030,43773,41266,38752,38439,40688]
+  # ReferencePosition: [29838,42079,40912,40122,40230,40770]
+  # ReferencePosition: [29226, 41576, 41653, 39844, 40103, 41552]
+  # Hit HP6 high limit when X = -5.0 ReferencePosition: [30333, 42797, 42718, 40908, 41324, 42659]
+  # 0.07 in Y ReferencePosition: [29282, 41366, 41808, 39999, 39893, 41608]
   # ReferencePosition: [32438, 37387, 43686, 44733, 34861, 40855]
 SafetyControllerSettings:
   AirControllerSettings:
