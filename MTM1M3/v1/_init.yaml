@@ -74,7 +74,7 @@ DisplacementSensorSettings:
   NOffsets: [0, 0, 0, 0, 0, 0, 0, 0]
   XPositionOffset: -0.0323039
   YPositionOffset: -0.0285760
-  ZPositionOffset: -0.0288697
+  ZPositionOffset: -0.0296319
   XRotationOffset: -0.01250727
   YRotationOffset: -0.00226465
   ZRotationOffset: +0.02497025
@@ -352,7 +352,8 @@ PositionControllerSettings:
     HPForceLimitHigh: 200
     Timeout: 800
     PositionOffset: -1.5
-  ReferencePosition: [29001,41744,39237,36723,36410,38657]
+  ReferencePosition: [32574,45451,42717,40264,40690,42744]
+  # ReferencePosition: [33046,45789,43281,40768,40454,42702]
   # ReferencePosition: [31030,43773,41266,38752,38439,40688]
   # ReferencePosition: [29838,42079,40912,40122,40230,40770]
   # ReferencePosition: [29226, 41576, 41653, 39844, 40103, 41552]
@@ -470,6 +471,12 @@ SlewControllerSettings:
   UseBalanceForces: True 
   UseVelocityForces: False
 ILCApplicationSettings:
+  # (milliseconds) Timeout for ILCs calls which are expected to take a while -
+  # not running in the realtime loop.
+  FPGAConfigTimeout: 1000
+  # (milliseconds) Timeout for ILCs calls running in realtime loop.
+  FPGARealtimeLoopTimeout: 35
+  # (microseconds) Those are timeouts for ILC calls as specified in LTS-646.
   ReportServerID: 835
   ReportServerStatus: 270
   ChangeILCMode: 335
