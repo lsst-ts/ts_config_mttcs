@@ -104,7 +104,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: [227,435]
+  DisabledActuators: []
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -255,8 +255,8 @@ HardpointActuatorSettings:
   AirPressureFaultLowRaising: 100
   LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
   HighProximity: [57740, 64050, 56675, 56037, 65643, 57572]
-  IgnoreTensionRaisingLowering: 45
-  InRangeReadoutsToChaseFromWaitingTension: 50
+  IgnoreTensionRaisingLowering: 1
+  InRangeReadoutsToChaseFromWaitingTension: 1
 InclinometerSettings:
   Offset: 0.0
   Limits:
@@ -475,7 +475,7 @@ ILCApplicationSettings:
   # not running in the realtime loop.
   FPGAConfigTimeout: 1000
   # (milliseconds) Timeout for ILCs calls running in realtime loop.
-  FPGARealtimeLoopTimeout: 35
+  FPGARealtimeLoopTimeout: 100
   # (microseconds) Those are timeouts for ILC calls as specified in LTS-646.
   ReportServerID: 835
   ReportServerStatus: 270
