@@ -86,7 +86,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: [227]
+  DisabledActuators: []
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -256,7 +256,7 @@ PIDSettings:
       P: 0.0190936349895327
       I: 1.90936349895328
       D: 0.0
-      N: 0.0
+      N: 0.00
     Fz:
       Timestep: 0.02
       P: 1.35400433655061
@@ -415,7 +415,7 @@ SafetyControllerSettings:
     FaultOnAngularAccelerationY: On
     FaultOnAngularAccelerationZ: On
   ILCSettings:
-    FaultOnCommunicationTimeout: On
+    FaultOnCommunicationTimeout: Off
     CommunicationTimeoutCountThreshold: 3
     CommunicationTimeoutPeriod: 5
     FaultOnForceActuatorFollowingErrorCounting: On
@@ -438,9 +438,9 @@ SafetyControllerSettings:
     ElevationTimeout: -1
     InclinometerDeviationDeg: 180
 SlewControllerSettings:
-  TriggerBoosterValves: True
-  UseAccelerationForces: True
-  UseBalanceForces: True
+  TriggerBoosterValves: False
+  UseAccelerationForces: False
+  UseBalanceForces: False
   UseVelocityForces: False
 ILCApplicationSettings:
   # (milliseconds) Timeout for ILCs calls which are expected to take a while -
