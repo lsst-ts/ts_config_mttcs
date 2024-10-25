@@ -156,12 +156,12 @@ ForceActuatorSettings:
   MirrorXMoment: -65311
   MirrorYMoment: -20000
   MirrorZMoment: -20000
-  SetpointXMomentLowLimitFactor: -1.0
-  SetpointXMomentHighLimitFactor: 1.2
-  SetpointYMomentLowLimitFactor: -1.0
-  SetpointYMomentHighLimitFactor: 1.0
-  SetpointZMomentLowLimitFactor: -1.0
-  SetpointZMomentHighLimitFactor: 1.0
+  SetpointXMomentLowLimitFactor: -0.2
+  SetpointXMomentHighLimitFactor: 0.2
+  SetpointYMomentLowLimitFactor: -0.2
+  SetpointYMomentHighLimitFactor: 0.2
+  SetpointZMomentLowLimitFactor: -0.2
+  SetpointZMomentHighLimitFactor: 0.2
   SetpointNearNeighborLimitFactor: 1
   SetpointMirrorWeightLimitFactor: 1.8
   SetpointFarNeighborLimitFactor: 0.5
