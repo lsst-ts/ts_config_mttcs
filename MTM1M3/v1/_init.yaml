@@ -2,9 +2,10 @@ AccelerometerSettings:
   AngularAccelerationXDistance: 0.9478
   AngularAccelerationYDistance: 0.7565
   AngularAccelerationZDistance: 4.2500
-  XElevationPoly: [0,0,0]
-  YElevationPoly: [0,0,0]
-  ZElevationPoly: [0,0,0]
+  # fit from ts_m1m3support/utils/dcelevation 2024-10-18T15:15:00.000 to 2024-10-18T18:50:00.000
+  XElevationPoly: [-3.7910341020851535,0.06332940896157532,-0.00023041544043451832]
+  YElevationPoly: [21.443465873770865,0.012539014085397135,-0.0026993061486254464]
+  ZElevationPoly: [5.346860310105644,-0.07260126138251337,0.0001477158236550484]
   Accelerometer1:
     Bias: 0.0090
     Sensitivity: 1.993
