@@ -153,7 +153,7 @@ ForceActuatorSettings:
   UseInclinometer: True
   UseGyroscope: False
   UseAccelerometers: True
-  MirrorXMoment: -65311
+  MirrorXMoment: -20000
   MirrorYMoment: -20000
   MirrorZMoment: -20000
   SetpointXMomentLowLimitFactor: -0.2
