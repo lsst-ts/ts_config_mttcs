@@ -15,7 +15,7 @@ description: Optimal Integral Controller (OIC)
 
 name: OIC
 xref: x00 
-kp: 1.0
+kp: 0.7
 ki: 0
 kd: 0
 derivative_filter_coeff: 1.0
