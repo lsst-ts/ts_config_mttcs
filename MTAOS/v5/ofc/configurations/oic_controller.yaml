@@ -38,4 +38,4 @@ setpoint: [
   0.0, 0.0, 0.0, 0.0, 0.0
 ]
 normalization_weights_filename: "range-fwhm.yaml"
-truncation_threshold: 1.e-5
+truncation_threshold: 1.e-3
