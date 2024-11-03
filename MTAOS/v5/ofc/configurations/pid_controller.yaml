@@ -33,5 +33,5 @@ setpoint: [
   0.0, 0.0, 0.0, 0.0, 0.0, 
   0.0, 0.0, 0.0, 0.0, 0.0
 ]
-normalization_weights_filename: "default.yaml"
+normalization_weights_filename: "range-fwhm.yaml"
 truncation_threshold: 1.e-7
