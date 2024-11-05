@@ -69,6 +69,7 @@ camera_config:
     - 3.3e-4
   min_temperature: -20
   max_temperature: 20
+  enable_lut_temperature: False
   host: localhost
   port: 5560
 m2_config:
@@ -140,5 +141,6 @@ m2_config:
     - 1.3e-4
   min_temperature: -20
   max_temperature: 20
+  enable_lut_temperature: False
   host: localhost
   port: 5550
