@@ -75,7 +75,9 @@ camera_config:
     r_03:
       z_offset: 0.0
     i_06:
-      z_offset: 0.0
+      z_offset: -657.301
+    g_01:
+      z_offset: 9.289
   host: localhost
   port: 5560
 m2_config:
