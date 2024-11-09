@@ -1,6 +1,6 @@
 algorithm_name: simple
 simple:
-  max_delta_azimuth: 5
+  max_delta_azimuth: 2.0
   max_delta_elevation: 6
 azimuth_vignette_partial: 2.7
 azimuth_vignette_full: 35

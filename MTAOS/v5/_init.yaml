@@ -1,0 +1,13 @@
+camera: comcam
+instrument: comcam
+data_path: /repo/LSSTComCam
+run_name: mtaos_wep
+collections: "LSSTComCam/raw/all,LSSTComCam/calib"
+pipeline_n_processes: 9
+zernike_table_name: zernikeEstimateRaw
+reference_detector: 0
+visit_id_offset: 0
+m1m3_stress_limit: 137900.0 # Pascals (approx. 20 psi)
+m2_stress_limit: 344737.0 # Pascals (approx. 50 psi)
+stress_scale_approach: 'scale'
+stress_scale_factor: 1.25

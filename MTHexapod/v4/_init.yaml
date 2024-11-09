@@ -70,6 +70,12 @@ camera_config:
   min_temperature: -20
   max_temperature: 20
   enable_lut_temperature: False
+  camera: 'CCCamera'
+  filter_offsets:
+    r_03:
+      z_offset: 0.0
+    i_06:
+      z_offset: 0.0
   host: localhost
   port: 5560
 m2_config:
@@ -142,5 +148,11 @@ m2_config:
   min_temperature: -20
   max_temperature: 20
   enable_lut_temperature: False
+  camera: 'CCCamera'
+  filter_offsets:
+    r_03:
+      z_offset: 0.0
+    i_06:
+      z_offset: 0.0
   host: localhost
   port: 5550
