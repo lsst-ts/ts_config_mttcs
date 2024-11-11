@@ -388,7 +388,7 @@ SafetyControllerSettings:
     FaultOnStaticForceClipping: On
     FaultOnOffsetForceClipping: On
     FaultOnVelocityForceClipping: On
-    FaultOnForceClipping: On
+    FaultOnForceClipping: Off
   PositionControllerSettings:
     FollowingErrorPercentage: 110
     FaultNumberOfFollowingErrors: 50
