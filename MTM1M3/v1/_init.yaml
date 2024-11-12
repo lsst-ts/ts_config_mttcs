@@ -352,7 +352,7 @@ SafetyControllerSettings:
     FaultOnInvalidLength: On
     FaultOnInvalidResponse: On
     FaultOnUnknownCommand: On
-    FaultOnUnknownProblem: On
+    FaultOnUnknownProblem: Off
   InclinometerSettings:
     FaultOnResponseTimeout: On
     FaultOnInvalidCRC: On
