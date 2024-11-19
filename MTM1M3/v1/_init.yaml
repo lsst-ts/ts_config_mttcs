@@ -87,7 +87,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: []
+  DisabledActuators: [332]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -151,17 +151,17 @@ ForceActuatorSettings:
   ForceActuatorNearZNeighborsTablePath: ForceActuatorNearNeighborZTable.csv
   ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
   UseInclinometer: True
-  UseGyroscope: False
+  UseGyroscope: True
   UseAccelerometers: True
   MirrorXMoment: -20000
   MirrorYMoment: -20000
   MirrorZMoment: -20000
-  SetpointXMomentLowLimitFactor: -0.2
-  SetpointXMomentHighLimitFactor: 0.2
-  SetpointYMomentLowLimitFactor: -0.2
-  SetpointYMomentHighLimitFactor: 0.2
-  SetpointZMomentLowLimitFactor: -0.2
-  SetpointZMomentHighLimitFactor: 0.2
+  SetpointXMomentLowLimitFactor: -0.45
+  SetpointXMomentHighLimitFactor: 0.45
+  SetpointYMomentLowLimitFactor: -0.45
+  SetpointYMomentHighLimitFactor: 0.45
+  SetpointZMomentLowLimitFactor: -0.45
+  SetpointZMomentHighLimitFactor: 0.45
   SetpointNearNeighborLimitFactor: 1
   SetpointMirrorWeightLimitFactor: 1.8
   SetpointFarNeighborLimitFactor: 0.5
@@ -224,8 +224,8 @@ HardpointActuatorSettings:
   HPEncoderOffsets: [29897, 30786, 53315, 61621, -21824, 35572]
   HardpointMeasuredForceFaultHigh: 2400
   HardpointMeasuredForceFaultLow: -3600
-  HardpointBreakawayFaultHigh: 3800
-  HardpointBreakawayFaultLow: -3800
+  HardpointBreakawayFaultHigh: 3900
+  HardpointBreakawayFaultLow: -3900
   HardpointMeasuredForceFSBWarningHigh: 100
   HardpointMeasuredForceFSBWarningLow: -100
   HardpointMeasuredForceWarningHigh: 1200
@@ -441,7 +441,7 @@ SafetyControllerSettings:
 SlewControllerSettings:
   TriggerBoosterValves: False
   UseAccelerationForces: False
-  UseBalanceForces: False
+  UseBalanceForces: True
   UseVelocityForces: False
 ILCApplicationSettings:
   # (milliseconds) Timeout for ILCs calls which are expected to take a while -
