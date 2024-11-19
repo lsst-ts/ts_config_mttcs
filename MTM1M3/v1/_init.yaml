@@ -2,45 +2,49 @@ AccelerometerSettings:
   AngularAccelerationXDistance: 0.9478
   AngularAccelerationYDistance: 0.7565
   AngularAccelerationZDistance: 4.2500
+  # fit from ts_m1m3support/utils/dcelevation 2024-10-18T15:15:00.000 to 2024-10-18T18:50:00.000
+  XElevationPoly: [-3.7910341020851535,0.06332940896157532,-0.00023041544043451832]
+  YElevationPoly: [21.443465873770865,0.012539014085397135,-0.0026993061486254464]
+  ZElevationPoly: [5.346860310105644,-0.07260126138251337,0.0001477158236550484]
   Accelerometer1:
-    Bias: 0.009
-    Sensitivity: .1993
-    Offset: 0.011519981
+    Bias: 0.0090
+    Sensitivity: 1.993
+    Offset: +0.0875
     Scalar: 1.0
   Accelerometer2:
     Bias: 0.0039
     Sensitivity: 1.994
-    Offset: 0.007553103
+    Offset: +0.059
     Scalar: 1.0
   Accelerometer3:
     Bias: 0.0125
     Sensitivity: 1.994
-    Offset: 0.086111715
+    Offset: +0.1345
     Scalar: 1.0
   Accelerometer4:
     Bias: 0.0007
     Sensitivity: 1.995
-    Offset: 0.156193491
+    Offset: +0.144
     Scalar: 1.0
   Accelerometer5:
     Bias: 0.0146
     Sensitivity: 1.997
-    Offset: -0.141127269
+    Offset: -0.145
     Scalar: 1.0
   Accelerometer6:
-    Bias: 0.017
+    Bias: 0.0170
     Sensitivity: 1.996
-    Offset: 0.00167552
+    Offset: +0.045
     Scalar: 1.0
   Accelerometer7:
     Bias: -0.0108
     Sensitivity: 1.994
-    Offset: -0.010106905
+    Offset: -0.019
     Scalar: 1.0
   Accelerometer8:
     Bias: 0.0179
     Sensitivity: 1.992
-    Offset: -0.075325936
+    Offset: -0.034
     Scalar: 1.0
   Limits:
     AngularAccelerationX:
@@ -58,16 +62,17 @@ AccelerometerSettings:
       WarningLow: -9000
       WarningHigh: 9000
       FaultHigh: 9000
+  RawDumpPath: "/home/m1m3/rawdc/%FT%T.rdca"
 DisplacementSensorSettings:
   PositionTablePath: DisplacementSensorTable.csv
   NPorts: [0, 1, 2, 3, 4, 5, 6, 7]
   NOffsets: [0, 0, 0, 0, 0, 0, 0, 0]
-  XPositionOffset: -0.026436776
-  YPositionOffset: -0.018945409
-  ZPositionOffset: -0.030693524
-  XRotationOffset: +0.000017590
-  YRotationOffset: +0.000161836
-  ZRotationOffset: +0.000459137
+  XPositionOffset: -0.0323039
+  YPositionOffset: -0.0285760
+  ZPositionOffset: -0.0296319
+  XRotationOffset: -0.01250727
+  YRotationOffset: -0.00226465
+  ZRotationOffset: +0.02497025
 ForceActuatorSettings:
   BoosterValveControl:
     FollowingError:
@@ -147,12 +152,12 @@ ForceActuatorSettings:
   ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
   UseInclinometer: True
   UseGyroscope: False
-  UseAccelerometers: False
-  MirrorXMoment: -65311
+  UseAccelerometers: True
+  MirrorXMoment: -20000
   MirrorYMoment: -20000
   MirrorZMoment: -20000
   SetpointXMomentLowLimitFactor: -0.2
-  SetpointXMomentHighLimitFactor: 1.2
+  SetpointXMomentHighLimitFactor: 0.2
   SetpointYMomentLowLimitFactor: -0.2
   SetpointYMomentHighLimitFactor: 0.2
   SetpointZMomentLowLimitFactor: -0.2
@@ -167,7 +172,7 @@ ForceActuatorSettings:
   LowerDecrementPercentage: 0.05
   RaiseLowerFollowingErrorLimit: 200
   AccelerationForceComponent:
-    MaxRateOfChange: 105.0
+    MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   ActiveOpticForceComponent:
     MaxRateOfChange: 10.0
@@ -176,7 +181,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 105.0
     NearZeroValue: 1.0
   BalanceForceComponent:
-    MaxRateOfChange: 5.0
+    MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   ElevationForceComponent:
     MaxRateOfChange: 20.0
@@ -191,10 +196,10 @@ ForceActuatorSettings:
     MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   VelocityForceComponent:
-    MaxRateOfChange: 105.0
+    MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   FinalForceComponent:
-    MaxRateOfChange: 25.0
+    MaxRateOfChange: 55.0
     NearZeroValue: 1.0
   BumpTest:
     TestedTolerances:
@@ -206,7 +211,7 @@ ForceActuatorSettings:
     SettleTime: 3.0
     Measurements: 10
 GyroSettings:
-  DataRate: 1000
+  DataRate: 50
   AxesMatrix: [1,0,0,0,1,0,0,0,1]
   AngularVelocityXOffset: 0.0
   AngularVelocityYOffset: 0.0
@@ -218,7 +223,7 @@ HardpointActuatorSettings:
   MicrometersPerEncoder: 0.2442
   HPEncoderOffsets: [29897, 30786, 53315, 61621, -21824, 35572]
   HardpointMeasuredForceFaultHigh: 2400
-  HardpointMeasuredForceFaultLow: -2200
+  HardpointMeasuredForceFaultLow: -3600
   HardpointBreakawayFaultHigh: 3800
   HardpointBreakawayFaultLow: -3800
   HardpointMeasuredForceFSBWarningHigh: 100
@@ -230,8 +235,8 @@ HardpointActuatorSettings:
   AirPressureFaultLowRaising: 100
   LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
   HighProximity: [57740, 64050, 56675, 56037, 65643, 57572]
-  IgnoreTensionRaisingLowering: 45
-  InRangeReadoutsToChaseFromWaitingTension: 50
+  IgnoreTensionRaisingLowering: 1
+  InRangeReadoutsToChaseFromWaitingTension: 1
 InclinometerSettings:
   Offset: 0.0
   Limits:
@@ -252,7 +257,7 @@ PIDSettings:
       P: 0.0190936349895327
       I: 1.90936349895328
       D: 0.0
-      N: 0.0
+      N: 0.00
     Fz:
       Timestep: 0.02
       P: 1.35400433655061
@@ -280,39 +285,39 @@ PIDSettings:
   Slewing:
     Fx:
       Timestep: 0.02
-      P: 0.95
-      I: 0.1
-      D: 0.0
+      P: 1.25
+      I: 1.0
+      D: 0.2
       N: 0.0
     Fy:
       Timestep: 0.02
-      P: 0.95
-      I: 0.1
+      P: 1.5
+      I: 1.0
       D: 0.0
       N: 0.0
     Fz:
       Timestep: 0.02
-      P: 0.95
-      I: 0.1
-      D: 0.0
+      P: 1.5
+      I: 1.0
+      D: 0.1
       N: 0.0
     Mx:
       Timestep: 0.02
-      P: 0.95
-      I: 0.1
-      D: 0.0
+      P: 2.0
+      I: 0.4
+      D: 0.6
       N: 0.0
     My:
       Timestep: 0.02
-      P: 0.95
-      I: 0.1
+      P: 1.0
+      I: 0.2
       D: 0.0
       N: 0.0
     Mz:
       Timestep: 0.02
-      P: 0.95
-      I: 0.1
-      D: 0.0
+      P: 1.5
+      I: 0.5
+      D: 0.5
       N: 0.0
 PositionControllerSettings:
   ForceToStepsCoefficient: -0.25
@@ -321,13 +326,13 @@ PositionControllerSettings:
   Raise:
     HPForceLimitLow: -200
     HPForceLimitHigh: 1000
-    Timeout: 600
+    Timeout: 800
   Lower:
     HPForceLimitLow: -1000
     HPForceLimitHigh: 200
-    Timeout: 600
+    Timeout: 800
     PositionOffset: -1.5
-  ReferencePosition: [32438, 37387, 43686, 44733, 34861, 40855]
+  ReferencePosition: [32574,45451,42717,40264,40690,42744]
 SafetyControllerSettings:
   AirControllerSettings:
     FaultOnCommandOutputMismatch: On
@@ -347,7 +352,7 @@ SafetyControllerSettings:
     FaultOnInvalidLength: On
     FaultOnInvalidResponse: On
     FaultOnUnknownCommand: On
-    FaultOnUnknownProblem: On
+    FaultOnUnknownProblem: Off
   InclinometerSettings:
     FaultOnResponseTimeout: On
     FaultOnInvalidCRC: On
@@ -373,7 +378,7 @@ SafetyControllerSettings:
     FaultOnNearNeighborCheck: On
     FaultOnMagnitudeLimit: On
     FaultOnFarNeighborCheck: On
-    FaultOnElevationForceClipping: Off
+    FaultOnElevationForceClipping: On
     FaultOnAzimuthForceClipping: On
     FaultOnThermalForceClipping: On
     FaultOnBalanceForceClipping: On
@@ -388,7 +393,7 @@ SafetyControllerSettings:
     FollowingErrorPercentage: 110
     FaultNumberOfFollowingErrors: 50
     FaultOnUnstableCount: 100
-    FaultForTensionAboveSupported: 90
+    FaultForTensionAboveSupported: 99
   CellLightSettings:
     FaultOnOutputMismatch: On
     FaultOnSensorMismatch: Off
@@ -425,20 +430,26 @@ SafetyControllerSettings:
     AirPressureCountThreshold: 50
     AirPressurePeriod: 50
   ForceActuatorFollowingError:
-    FaultOnCounting: Off
+    FaultOnCounting: On
     FaultCount: 45
     FaultCountPeriod: 50
     FaultOnImmediate: On
   TMASettings:
-    AzimuthTimeout: 0.5
-    ElevationTimeout: 0.5
+    AzimuthTimeout: -1
+    ElevationTimeout: -1
     InclinometerDeviationDeg: 180
 SlewControllerSettings:
-  TriggerBoosterValves: True
-  UseAccelerationForces: True
-  UseBalanceForces: True
-  UseVelocityForces: True
+  TriggerBoosterValves: False
+  UseAccelerationForces: False
+  UseBalanceForces: False
+  UseVelocityForces: False
 ILCApplicationSettings:
+  # (milliseconds) Timeout for ILCs calls which are expected to take a while -
+  # not running in the realtime loop.
+  FPGAConfigTimeout: 1000
+  # (milliseconds) Timeout for ILCs calls running in realtime loop.
+  FPGARealtimeLoopTimeout: 100
+  # (microseconds) Those are timeouts for ILC calls as specified in LTS-646.
   ReportServerID: 835
   ReportServerStatus: 270
   ChangeILCMode: 335
