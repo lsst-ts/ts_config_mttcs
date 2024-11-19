@@ -1,7 +1,7 @@
 camera: comcam
 instrument: comcam
 data_path: /repo/LSSTComCam
-run_name: mtaos_wep
+run_name: "LSSTComCam/quickLook"
 collections: "LSSTComCam/raw/all,LSSTComCam/calib"
 pipeline_n_processes: 9
 zernike_table_name: zernikeEstimateRaw
