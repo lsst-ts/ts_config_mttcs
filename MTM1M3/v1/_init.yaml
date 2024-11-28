@@ -87,7 +87,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: [332]
+  DisabledActuators: []
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -160,8 +160,8 @@ ForceActuatorSettings:
   SetpointXMomentHighLimitFactor: 0.45
   SetpointYMomentLowLimitFactor: -0.45
   SetpointYMomentHighLimitFactor: 0.45
-  SetpointZMomentLowLimitFactor: -0.45
-  SetpointZMomentHighLimitFactor: 0.45
+  SetpointZMomentLowLimitFactor: -0.55
+  SetpointZMomentHighLimitFactor: 0.55
   SetpointNearNeighborLimitFactor: 1
   SetpointMirrorWeightLimitFactor: 1.8
   SetpointFarNeighborLimitFactor: 0.5
