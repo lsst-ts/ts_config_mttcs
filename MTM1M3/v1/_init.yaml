@@ -3,9 +3,10 @@ AccelerometerSettings:
   AngularAccelerationYDistance: 0.7565
   AngularAccelerationZDistance: 4.2500
   # fit from ts_m1m3support/utils/dcelevation 2024-10-18T15:15:00.000 to 2024-10-18T18:50:00.000
-  XElevationPoly: [-3.7910341020851535,0.06332940896157532,-0.00023041544043451832]
-  YElevationPoly: [21.443465873770865,0.012539014085397135,-0.0026993061486254464]
-  ZElevationPoly: [5.346860310105644,-0.07260126138251337,0.0001477158236550484]
+  # fit from ./utils/dcelevation 2024-11-29T19:12:00.000 2024-11-29T19:55:00.000
+  XElevationPoly: [-3.7790086371952007,0.07401745336564518,-0.00031616580290693845]
+  YElevationPoly: [22.82992087723917,-0.036075281130517015,-0.002373551577161219]
+  ZElevationPoly: [5.717937489201259,-0.08558683224844532,0.00024331833356884796]
   Accelerometer1:
     Bias: 0.0090
     Sensitivity: 1.993
@@ -87,7 +88,7 @@ ForceActuatorSettings:
       CloseY: 0.15
       OpenZ: 0.2
       CloseZ: 0.15
-  DisabledActuators: []
+  DisabledActuators: [332]
   AccelerationXTablePath: AccelerationXTable.csv
   AccelerationYTablePath: AccelerationYTable.csv
   AccelerationZTablePath: AccelerationZTable.csv
@@ -160,8 +161,8 @@ ForceActuatorSettings:
   SetpointXMomentHighLimitFactor: 0.45
   SetpointYMomentLowLimitFactor: -0.45
   SetpointYMomentHighLimitFactor: 0.45
-  SetpointZMomentLowLimitFactor: -0.55
-  SetpointZMomentHighLimitFactor: 0.55
+  SetpointZMomentLowLimitFactor: -0.45
+  SetpointZMomentHighLimitFactor: 0.45
   SetpointNearNeighborLimitFactor: 1
   SetpointMirrorWeightLimitFactor: 1.8
   SetpointFarNeighborLimitFactor: 0.5
