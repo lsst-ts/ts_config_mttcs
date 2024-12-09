@@ -38,6 +38,6 @@ setpoint: [
   0.0, 0.0, 0.0, 0.0, 0.0
 ]
 normalization_weights_filename: "range-fwhm.yaml"
-truncation_threshold: 8.e-5
+truncation_threshold: 1e-3
 rotation_offset: -90.0 
 
