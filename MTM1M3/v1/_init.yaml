@@ -386,7 +386,7 @@ SafetyControllerSettings:
     FaultOnBalanceForceClipping: On
     FaultOnAccelerationForceClipping: On
     FaultOnActiveOpticNetForceCheck: On
-    FaultOnActiveOpticForceClipping: On
+    FaultOnActiveOpticForceClipping: Off
     FaultOnStaticForceClipping: On
     FaultOnOffsetForceClipping: On
     FaultOnVelocityForceClipping: On
