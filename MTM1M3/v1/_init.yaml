@@ -226,13 +226,13 @@ HardpointActuatorSettings:
   HPEncoderOffsets: [29897, 30786, 53315, 61621, -21824, 35572]
   HardpointMeasuredForceFaultHigh: 2400
   HardpointMeasuredForceFaultLow: -3600
-  HardpointBreakawayFaultHigh: 3900
-  HardpointBreakawayFaultLow: -3900
+  HardpointBreakawayFaultHigh: 3950
+  HardpointBreakawayFaultLow: -3950
   HardpointMeasuredForceFSBWarningHigh: 100
   HardpointMeasuredForceFSBWarningLow: -100
   HardpointMeasuredForceWarningHigh: 1200
   HardpointMeasuredForceWarningLow: -1100
-  AirPressureFaultHigh: 127
+  AirPressureFaultHigh: 131
   AirPressureFaultLow: 110
   AirPressureFaultLowRaising: 100
   LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
