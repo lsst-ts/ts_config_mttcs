@@ -173,6 +173,7 @@ ForceActuatorSettings:
   RaiseIncrementPercentage: 0.05
   LowerDecrementPercentage: 0.05
   RaiseLowerFollowingErrorLimit: 200
+  HardpointBalanceForcesOnInActiveState: False
   AccelerationForceComponent:
     MaxRateOfChange: 100.0
     NearZeroValue: 1.0
