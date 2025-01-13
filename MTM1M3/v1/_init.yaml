@@ -189,7 +189,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   OffsetForceComponent:
-    MaxRateOfChange: 10.0
+    MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   StaticForceComponent:
     MaxRateOfChange: 105.0
@@ -201,7 +201,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   FinalForceComponent:
-    MaxRateOfChange: 55.0
+    MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   BumpTest:
     TestedTolerances:
