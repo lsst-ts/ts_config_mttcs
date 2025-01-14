@@ -91,6 +91,8 @@ camera_config:
   min_temperature: -20
   max_temperature: 20
   enable_lut_temperature: False
+  high_current_threshold: 4.5
+  no_movement_timeout: 1200
   camera: 'CCCamera'
   filter_offsets:
     r_03:
@@ -190,5 +192,7 @@ m2_config:
   min_temperature: -20
   max_temperature: 20
   enable_lut_temperature: False
+  high_current_threshold: 4.5
+  no_movement_timeout: 1200
   host: localhost
   port: 5550
