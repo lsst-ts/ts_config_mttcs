@@ -3,9 +3,10 @@ AccelerometerSettings:
   AngularAccelerationYDistance: 0.7565
   AngularAccelerationZDistance: 4.2500
   # fit from ts_m1m3support/utils/dcelevation 2024-10-18T15:15:00.000 to 2024-10-18T18:50:00.000
-  XElevationPoly: [-3.7910341020851535,0.06332940896157532,-0.00023041544043451832]
-  YElevationPoly: [21.443465873770865,0.012539014085397135,-0.0026993061486254464]
-  ZElevationPoly: [5.346860310105644,-0.07260126138251337,0.0001477158236550484]
+  # fit from ./utils/dcelevation 2024-11-29T19:12:00.000 2024-11-29T19:55:00.000
+  XElevationPoly: [-3.7790086371952007,0.07401745336564518,-0.00031616580290693845]
+  YElevationPoly: [22.82992087723917,-0.036075281130517015,-0.002373551577161219]
+  ZElevationPoly: [5.717937489201259,-0.08558683224844532,0.00024331833356884796]
   Accelerometer1:
     Bias: 0.0090
     Sensitivity: 1.993
@@ -115,6 +116,7 @@ ForceActuatorSettings:
   VelocityZTablePath: VelocityZTable.csv
   VelocityXZTablePath: VelocityXZTable.csv
   VelocityYZTablePath: VelocityYZTable.csv
+  VelocityXYTablePath: VelocityXYTable.csv
   MeasuredMirrorLimitTablePath: MeasuredMirrorLimitTable.csv
   MeasuredWarningPercentage: 90
   FollowingErrorPrimaryCylinderLimitTablePath: FollowingErrorPrimaryCylinderLimitTable.csv
@@ -151,17 +153,17 @@ ForceActuatorSettings:
   ForceActuatorNearZNeighborsTablePath: ForceActuatorNearNeighborZTable.csv
   ForceActuatorNeighborsTablePath: ForceActuatorNeighborsTable.csv
   UseInclinometer: True
-  UseGyroscope: False
+  UseGyroscope: True
   UseAccelerometers: True
   MirrorXMoment: -20000
   MirrorYMoment: -20000
   MirrorZMoment: -20000
-  SetpointXMomentLowLimitFactor: -0.2
-  SetpointXMomentHighLimitFactor: 0.2
-  SetpointYMomentLowLimitFactor: -0.2
-  SetpointYMomentHighLimitFactor: 0.2
-  SetpointZMomentLowLimitFactor: -0.2
-  SetpointZMomentHighLimitFactor: 0.2
+  SetpointXMomentLowLimitFactor: -0.55
+  SetpointXMomentHighLimitFactor: 0.55
+  SetpointYMomentLowLimitFactor: -0.55
+  SetpointYMomentHighLimitFactor: 0.55
+  SetpointZMomentLowLimitFactor: -0.65
+  SetpointZMomentHighLimitFactor: 0.65
   SetpointNearNeighborLimitFactor: 1
   SetpointMirrorWeightLimitFactor: 1.8
   SetpointFarNeighborLimitFactor: 0.5
@@ -171,6 +173,7 @@ ForceActuatorSettings:
   RaiseIncrementPercentage: 0.05
   LowerDecrementPercentage: 0.05
   RaiseLowerFollowingErrorLimit: 200
+  HardpointBalanceForcesOnInActiveState: False
   AccelerationForceComponent:
     MaxRateOfChange: 100.0
     NearZeroValue: 1.0
@@ -187,7 +190,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   OffsetForceComponent:
-    MaxRateOfChange: 10.0
+    MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   StaticForceComponent:
     MaxRateOfChange: 105.0
@@ -199,7 +202,7 @@ ForceActuatorSettings:
     MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   FinalForceComponent:
-    MaxRateOfChange: 55.0
+    MaxRateOfChange: 100.0
     NearZeroValue: 1.0
   BumpTest:
     TestedTolerances:
@@ -212,7 +215,7 @@ ForceActuatorSettings:
     Measurements: 10
 GyroSettings:
   DataRate: 50
-  AxesMatrix: [1,0,0,0,1,0,0,0,1]
+  AxesMatrix: [-1,0,0,0,-1,0,0,0,-1]
   AngularVelocityXOffset: 0.0
   AngularVelocityYOffset: 0.0
   AngularVelocityZOffset: 0.0
@@ -224,13 +227,13 @@ HardpointActuatorSettings:
   HPEncoderOffsets: [29897, 30786, 53315, 61621, -21824, 35572]
   HardpointMeasuredForceFaultHigh: 2400
   HardpointMeasuredForceFaultLow: -3600
-  HardpointBreakawayFaultHigh: 3800
-  HardpointBreakawayFaultLow: -3800
+  HardpointBreakawayFaultHigh: 3950
+  HardpointBreakawayFaultLow: -3950
   HardpointMeasuredForceFSBWarningHigh: 100
   HardpointMeasuredForceFSBWarningLow: -100
   HardpointMeasuredForceWarningHigh: 1200
   HardpointMeasuredForceWarningLow: -1100
-  AirPressureFaultHigh: 127
+  AirPressureFaultHigh: 131
   AirPressureFaultLow: 110
   AirPressureFaultLowRaising: 100
   LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
@@ -315,8 +318,8 @@ PIDSettings:
       N: 0.0
     Mz:
       Timestep: 0.02
-      P: 1.5
-      I: 0.5
+      P: 1.0
+      I: 0.7
       D: 0.5
       N: 0.0
 PositionControllerSettings:
@@ -384,7 +387,7 @@ SafetyControllerSettings:
     FaultOnBalanceForceClipping: On
     FaultOnAccelerationForceClipping: On
     FaultOnActiveOpticNetForceCheck: On
-    FaultOnActiveOpticForceClipping: On
+    FaultOnActiveOpticForceClipping: Off
     FaultOnStaticForceClipping: On
     FaultOnOffsetForceClipping: On
     FaultOnVelocityForceClipping: On
@@ -440,9 +443,9 @@ SafetyControllerSettings:
     InclinometerDeviationDeg: 180
 SlewControllerSettings:
   TriggerBoosterValves: False
-  UseAccelerationForces: False
-  UseBalanceForces: False
-  UseVelocityForces: False
+  UseAccelerationForces: True
+  UseBalanceForces: True
+  UseVelocityForces: True
 ILCApplicationSettings:
   # (milliseconds) Timeout for ILCs calls which are expected to take a while -
   # not running in the realtime loop.
