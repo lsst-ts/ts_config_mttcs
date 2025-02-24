@@ -4,7 +4,7 @@
 host: "rot-pxi-controller.cp.lsst.org"
 
 # Port number of the rotator PXI controller.
-port: 5570
+port: 5580
 
 # Connection timeout in second.
 connection_timeout: 10
