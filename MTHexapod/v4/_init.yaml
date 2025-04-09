@@ -92,20 +92,20 @@ camera_config:
   max_temperature: 20
   enable_lut_temperature: False
   no_movement_idle_time: 1200
-  camera: 'CCCamera'
+  camera: 'MTCamera'
   filter_offsets:
-    r_03:
+    r_57:
       z_offset: 0.0
-    i_06:
-      z_offset: -657.301
-    g_01:
-      z_offset: 9.289
-    u_02:
-      z_offset: 20.430
-    y_04:
-      z_offset: -660.399
-    z_03:
-      z_offset: -658.855
+    i_39:
+      z_offset: -690.642
+    g_6:
+      z_offset: 1142.63
+    u_24:
+      z_offset: 2795.578
+    y_10:
+      z_offset: -1344.506
+    z_20:
+      z_offset: -1095.752
   host: localhost
   port: 5560
 m2_config:
