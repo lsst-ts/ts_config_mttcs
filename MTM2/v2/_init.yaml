@@ -40,3 +40,7 @@ inclination_enable_comparison: False
 # Maximum angle difference between the onboard and MTMount angles. This value
 # should be greater than 0. If 0 is used, the default value will be applied.
 inclination_max_difference: 2.0
+
+# Applied force offset to restrict its available range to avoid the triggering
+# of the force limit under the closed-loop control.
+applied_force_offset: 20.0
