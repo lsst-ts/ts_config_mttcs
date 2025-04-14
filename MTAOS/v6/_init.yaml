@@ -1,8 +1,8 @@
 camera: lsstCam
 instrument: lsst
-data_path: LSSTCam/runs/quickLook
+data_path: LSSTCam
 collections: "LSSTCam/raw/all,LSSTCam/calib,refcats"
-run_name: "LSSTCam/quickLook"
+run_name: "LSSTCam/runs/quickLook"
 pipeline_n_processes: 9
 zernike_table_name: zernikes
 reference_detector: 0
