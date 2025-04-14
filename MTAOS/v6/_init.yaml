@@ -1,5 +1,5 @@
 camera: lsstCam
-instrument: lsst
+instrument: LSSTCam
 data_path: LSSTCam
 collections: "LSSTCam/raw/all,LSSTCam/calib,refcats"
 run_name: "LSSTCam/runs/quickLook"
