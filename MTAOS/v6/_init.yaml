@@ -1,6 +1,6 @@
 camera: lsstCam
 instrument: lsst
-data_path: LSSTCam
+data_path: LSSTCam/runs/quickLook
 collections: "LSSTCam/raw/all,LSSTCam/calib,refcats"
 run_name: "LSSTCam/quickLook"
 pipeline_n_processes: 9
