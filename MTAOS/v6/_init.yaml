@@ -1,10 +1,10 @@
-camera: comcam
-instrument: comcam
-data_path: /repo/LSSTComCam
-run_name: "LSSTComCam/quickLook"
-collections: "LSSTComCam/raw/all,LSSTComCam/calib"
+camera: lsstCam
+instrument: lsst
+data_path: /repo/LSSTCam
+collections: "LSSTCam/raw/all,LSSTCam/calib,refcats"
+run_name: "LSSTCam/quickLook"
 pipeline_n_processes: 9
-zernike_table_name: zernikeEstimateRaw
+zernike_table_name: zernikes
 reference_detector: 0
 visit_id_offset: 0
 m1m3_stress_limit: 137900.0 # Pascals (approx. 20 psi)

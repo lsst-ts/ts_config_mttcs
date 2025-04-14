@@ -1,5 +1,0 @@
-camera: lsstCam
-instrument: lsst
-data_path: /repo/LSSTCam
-collections: "LSSTCam/raw/all,LSSTCam/calib,refcats"
-zernike_table_name: zernikes
