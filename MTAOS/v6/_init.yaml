@@ -15,3 +15,5 @@ elevation_delta_limit_max: 9.0
 elevation_delta_limit_min: 4.0
 use_ocps: True
 used_dofs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 30, 31, 32, 33, 34]
+closed_loop_ofc_configuration:
+  truncation_index: 12
