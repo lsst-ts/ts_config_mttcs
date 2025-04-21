@@ -37,6 +37,6 @@ setpoint: [
   0.0, 0.0, 0.0, 0.0, 0.0
 ]
 normalization_weights_filename: "range-fwhm.yaml"
-truncation_index: 10
+truncation_index: 15
 rotation_offset: 0.0 
 
