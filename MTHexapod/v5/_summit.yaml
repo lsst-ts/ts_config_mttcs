@@ -1,0 +1,4 @@
+camera_config:
+  host: camhex-pxi-controller.cp.lsst.org
+m2_config:
+  host: m2-hexapod-pxi.cp.lsst.org
