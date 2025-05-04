@@ -22,6 +22,7 @@ M1M3Bending:
   mode1: 0.0
   mode2: 0.0
   mode3: 0.0
+  mode4: 0.0
   mode5: 0.0
   mode6: 0.0
   mode7: 0.0
@@ -43,6 +44,7 @@ M2Bending:
   mode1: 0.0
   mode2: 0.0
   mode3: 0.0
+  mode4: 0.0
   mode5: 0.0
   mode6: 0.0
   mode7: 0.0
