@@ -16,7 +16,7 @@ description: Optimal Integral Controller (OIC)
 name: PID
 xref: x00
 kp: 0.225
-ki: 0.0
+ki: 0.025
 kd: 0.0
 derivative_filter_coeff: 1.0
 zn_selected: [
@@ -35,6 +35,18 @@ setpoint: [
   0.0, 0.0, 0.0, 0.0, 0.0,
   0.0, 0.0, 0.0, 0.0, 0.0,
   0.0, 0.0, 0.0, 0.0, 0.0
+]
+max_integral: [
+  500.0, 100.0, 100.0, 0.01, 0.01
+  500.0, 100.0, 100.0, 0.01, 0.01
+  0.5, 0.5, 0.5, 0.5, 0.5,
+  0.5, 0.5, 0.5, 0.5, 0.5,
+  0.0, 0.0, 0.0, 0.0, 0.0,
+  0.0, 0.0, 0.0, 0.0, 0.0,
+  0.5, 0.5, 0.5, 0.5, 0.5,
+  0.5, 0.5, 0.5, 0.5, 0.5,
+  0.0, 0.0, 0.0, 0.0, 0.0,
+  0.0, 0.0, 0.0, 0.0, 0.0,
 ]
 normalization_weights_filename: "range-fwhm.yaml"
 truncation_index: 12
