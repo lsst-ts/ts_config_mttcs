@@ -15,8 +15,8 @@ description: Optimal Integral Controller (OIC)
 
 name: PID
 xref: x00
-kp: 0.225
-ki: 0.045
+kp: 0.3
+ki: 0.0
 kd: 0.0
 derivative_filter_coeff: 1.0
 zn_selected: [
