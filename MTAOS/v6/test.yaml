@@ -1,0 +1,22 @@
+camera: lsstCam
+instrument: lsst
+data_path: LSSTCam
+collections: "LSSTCam/raw/all,LSSTCam/calib,refcats"
+run_name: "LSSTCam/runs/quickLook"
+pipeline_n_processes: 9
+zernike_table_name: zernikes
+reference_detector: 0
+visit_id_offset: 0
+m1m3_stress_limit: 137900.0 # Pascals (approx. 20 psi)
+m2_stress_limit: 344737.0 # Pascals (approx. 50 psi)
+stress_scale_approach: 'scale'
+stress_scale_factor: 1.25
+elevation_delta_limit_max: 9.0
+elevation_delta_limit_min: 4.0
+rotation_delta_limit: 9.0
+use_ocps: True
+used_dofs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 30, 31, 32, 33, 34]
+zernike_thresholds:
+  11: 0.3
+closed_loop_ofc_configuration:
+  truncation_index: 12
