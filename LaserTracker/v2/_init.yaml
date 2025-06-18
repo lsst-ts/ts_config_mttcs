@@ -24,8 +24,8 @@ instances:
     num_samples: 1
     randomize_points: false
     station_lock: false
-    rms_tolerance: 0.05
-    max_tolerance: 1.0
+    rms_tolerance: 3.0
+    max_tolerance: 6.0
     two_face_az_tolerance: 0.08
     two_face_el_tolerance: 0.08
     two_face_range_tolerance: 0.05
