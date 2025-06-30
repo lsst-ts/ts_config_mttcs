@@ -5,14 +5,14 @@
 # r[XY] are in arcsec
 # mode[1-20] are in um
 M2Hexapod:
-  dZ: -1000.0
+  dZ: 0.0
   dX: 0.0
   dY: 0.0
   rX: 0.0
   rY: 0.0
 
 cameraHexapod:
-  dZ: -1000.0
+  dZ: 0.0
   dX: 0.0
   dY: 0.0
   rX: 0.0
