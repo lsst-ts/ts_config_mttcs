@@ -90,9 +90,9 @@ camera_config:
     - [0]
     - [0]
   min_compensation_adjustment:
-    - 1
-    - 1
-    - 1
+    - 20
+    - 20
+    - 20
     - 3.3e-4
     - 3.3e-4
     - 3.3e-4
@@ -193,9 +193,9 @@ m2_config:
     - [0]
     - [0]
   min_compensation_adjustment:
-    - 1
-    - 1
-    - 1
+    - 20
+    - 20
+    - 20
     - 1.3e-4
     - 1.3e-4
     - 1.3e-4
