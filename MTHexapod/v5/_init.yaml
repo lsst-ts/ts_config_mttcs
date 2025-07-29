@@ -203,6 +203,7 @@ m2_config:
   max_temperature: 20
   enable_lut_temperature: False
   no_movement_idle_time: 12000
+  camera: 'MTCamera'
   filter_offsets:
     r_57:
       z_offset: 0.0
