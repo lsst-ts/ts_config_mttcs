@@ -1,0 +1,33 @@
+camera_config:
+  elevation_coeffs:
+    # Fit of https://github.com/bxin/hexrot/blob/master/LUT/Camera%20Hexapod%20Motions%20in%20Elevation%20Axis%202020%2007%2023.xlsx
+    # commit 0513b27 2020-08-04
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+rotation_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+m2_config:
+  elevation_coeffs:
+    # Fit of https://github.com/bxin/hexrot/blob/master/LUT/M2%20Hexapod%20Motions%20in%20Elevation%20Axis%202020%2007%2023.xlsx
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+  rotation_coeffs:
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
+    - [0]
