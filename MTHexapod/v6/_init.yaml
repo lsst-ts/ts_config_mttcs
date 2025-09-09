@@ -172,9 +172,9 @@ m2_config:
       z_offset: 0.0
     ph_5:
       z_offset: 0.0
-  step_size_xy: 0.0
-  step_size_z: 0.0
-  step_size_uv: 0.0
-  step_size_w: 0.0
+  step_size_xy: 500.0
+  step_size_z: 1000.0
+  step_size_uv: 0.05
+  step_size_w: 0.025
   host: localhost
   port: 5550
