@@ -50,7 +50,7 @@ camera_config:
     # From Document 7334 page 9 last modified 2016-01-20: z correction is 1.32mm/20C
     - [0]
     - [0]
-    - [0, -66.0]
+    - [0]
     - [0]
     - [0]
     - [0]
@@ -139,7 +139,7 @@ m2_config:
     # From Document 7334 page 9 last modified 2016-01-20: z correction is 1.05mm/20C
     - [0]
     - [0]
-    - [0, -52.5]
+    - [0]
     - [0]
     - [0]
     - [0]
