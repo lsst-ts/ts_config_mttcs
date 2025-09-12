@@ -172,8 +172,8 @@ m2_config:
       z_offset: 0.0
     ph_5:
       z_offset: 0.0
-  step_size_xy: 10.0
-  step_size_z: 10.0
+  step_size_xy: 100.0
+  step_size_z: 100.0
   step_size_uv: 0.1
   step_size_w: 0.025
   host: localhost
