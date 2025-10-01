@@ -6,6 +6,6 @@ azimuth_vignette_partial: 2.7
 azimuth_vignette_full: 35
 elevation_vignette_partial: 1.3
 elevation_vignette_full: 44
-shutter_vignette_partial: -1
-shutter_vignette_full: -10
+shutter_vignette_partial: 99
+shutter_vignette_full: 1.3
 enable_el_motion: false
