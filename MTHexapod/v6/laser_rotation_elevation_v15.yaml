@@ -1,7 +1,6 @@
 camera_config:
   elevation_rotation_coeffs:
-    # Fit of https://github.com/bxin/hexrot/blob/master/LUT/Camera%20Hexapod%20Motions%20in%20Elevation%20Axis%202020%2007%2023.xlsx
-    # commit 0513b27 2020-08-04
+    # Laser-derived + ZEMAX-optimized assuming same rotation dependency for all elevations
     - [[-1268.9722225813864, -52.06590375592045, 0.2796743178852583, 0.0021548544382733324],
         [0.07930770780914105, -0.11156096778609868, -0.0005099682103595193, 1.7601743189245774e-05], 
         [0.003725306878210952, 0.0022323548586313494, 7.935252643642698e-06, -3.5223131110537806e-07], 
@@ -26,8 +25,7 @@ camera_config:
     - [[0]]
 m2_config:
   elevation_rotation_coeffs:
-    # Fit of https://github.com/bxin/hexrot/blob/master/LUT/M2%20Hexapod%20Motions%20in%20Elevation%20Axis%202020%2007%2023.xlsx
-    # commit 0513b27 2020-08-04
+    # Laser-derived LUT
     - [[-61]]
     - [
         [2799.7415621728373],
