@@ -1,13 +1,16 @@
 FCU:
   AutoDisable: true
   FailuresToDisable: 3
-  Disabled: []
+  # Disabled: [2,5,10,77,85,88,90,93,94,1,80,3,4,22,31,45,64,65,82]
+  Disabled: [] 
+  DefaultFanSpeed: 700
 
 FlowMeter:
   Enabled: true
 
 GlycolPump:
   Enabled: true
+  StartupFrequency: 30
 
 MixingValve:
   # units are mA (milliamperes)
@@ -18,14 +21,35 @@ MixingValve:
   # units are V (Volts)
   PositionFeedback:
     FullyClosed: 0.021
-    FullyOpened: 9.698
+    FullyOpened: 9.69
+    a: 2.48351
+    b: 9.91749
+
+  # Finer mixing valve control. Move above/below target values when change is requested.
+  FinerControl:
+    # Range to consider mixing valve in position. In percents.
+    InPosition: 6
+    # Step size in % of the opened mixing valve. The mixing valve will be
+    # commanded to go above this value first, when change is less than
+    # MinimalMove from the current target value.
+    BacklashStep: 5
+    # Move below this value will first move + BacklashStep to compensate for backlash.
+    MinimalMove: 4.5
+    # Moving timeout in seconds. If valve doesn't finish move in given time, mixing valve will fault.
+    MaxMovingTime: 30
 
   PID:
     Timestep: 2.0
-    P : -40.0
-    I : -2.5
-    D : -0.1
+    P : -20.0
+    I : -0.5
+    D : 0.0
     N : 0.5
+
+    # Timestep: 2.0
+    # P : -40.0
+    # I : -2.5
+    # D : -0.1
+    # N : 0.5
 
     # Timestep: 2.0
     # P : -20.0
@@ -39,8 +63,22 @@ Heaters:
   # heaters at 50%.
   PRange: 1
 
+  # PID settings. Either scalar (a single value), or array of 96 values.
+  # Scallar sets the same value for all FCUs.
+  PID:
+    Default:
+      Timestep: 5.0
+      P: 0.6
+      I: 1.0
+      D: 0.2
+      N: 0.2
+    # If value differ per-FCU, it can be specifed under FCU1-96, as follow for FCU 12
+    # FCU:
+    #   Address: 12
+    #   P: 0.8
+
   # Checks heaters every interval seconds.
-  Interval: 10
+  Interval: 5
 
 Setpoint:
   # Loop run time in seconds
@@ -48,15 +86,15 @@ Setpoint:
   # Target temperature control tolerance in degrees C
   Tolerance: 0.05
   # Mixing valve step size - change in % every time difference between coolant temperature and target temperature is greater than tolerance
-  MixingValveStep: 5
+  MixingValveStep: 2.5
   # Percentage of mirror supply temperature on glycol loop target value
   GlycolSupplyPercentage: 95
   # Allowed minimal and maximal setpoints
   Low: -15
   High: 25
   Safety:
-    # Safe range for the mirror operation in degC, from air probe measurements
-    Range: 3
+  # Safe range for the mirror operation in degC, from air probe measurements
+    Range: 8
     # Minimal offset of the new target from currently invalid temperature
     MinOffset: 0.1
     # Offset for heaters temperature above glycol temperature
