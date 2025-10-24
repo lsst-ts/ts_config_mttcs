@@ -1,7 +1,0 @@
-host: 127.0.0.1
-port: 5000
-connection_timeout: 10
-read_timeout: 10
-amcs_vmax: -1 # This indicates that no vmax should be set for AMCS.
-amcs_amax: -1 # This indicates that no amax should be set for AMCS.
-amcs_jmax: -1 # This indicates that no jmax should be set for AMCS.
