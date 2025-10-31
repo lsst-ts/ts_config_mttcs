@@ -166,16 +166,17 @@ ForceActuatorSettings:
   SetpointZMomentHighLimitFactor: 0.65
   SetpointNearNeighborLimitFactor: 1
   SetpointMirrorWeightLimitFactor: 1.8
-  SetpointFarNeighborLimitFactor: 0.5
+  SetpointFarNeighborLimitFactor: 0.6
   MirrorCenterOfGravityX: -0.001121066
   MirrorCenterOfGravityY: 0.000218726
   MirrorCenterOfGravityZ: -1.7657086
   RaiseIncrementPercentage: 0.05
   LowerDecrementPercentage: 0.05
   RaiseLowerFollowingErrorLimit: 200
+  # If true, automatically turn on hardpoint balance forces when mirror is raised in non-engineering state
   HardpointBalanceForcesOnInActiveState: False
   AccelerationForceComponent:
-    MaxRateOfChange: 100.0
+    MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   ActiveOpticForceComponent:
     MaxRateOfChange: 10.0
@@ -184,25 +185,25 @@ ForceActuatorSettings:
     MaxRateOfChange: 105.0
     NearZeroValue: 1.0
   BalanceForceComponent:
-    MaxRateOfChange: 100.0
+    MaxRateOfChange: 5.0
     NearZeroValue: 1.0
   ElevationForceComponent:
-    MaxRateOfChange: 20.0
+    MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   OffsetForceComponent:
     MaxRateOfChange: 20.0
     NearZeroValue: 1.0
   StaticForceComponent:
-    MaxRateOfChange: 105.0
+    MaxRateOfChange: 0.1
     NearZeroValue: 1.0
   ThermalForceComponent:
     MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   VelocityForceComponent:
-    MaxRateOfChange: 100.0
+    MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   FinalForceComponent:
-    MaxRateOfChange: 100.0
+    MaxRateOfChange: 10.0
     NearZeroValue: 1.0
   BumpTest:
     TestedTolerances:
@@ -211,8 +212,15 @@ ForceActuatorSettings:
     NonTestedTolerances:
       Warning: 20
       Error: 100
-    SettleTime: 3.0
-    Measurements: 10
+    SettleTime: 4.0
+    Measurements: 25
+    MinimalDistance: 4
+  # Minimal force change (in N, for forceMagnitude) to force logging of preclipped forces.
+  PreclippedIgnoreChanges: 200
+  # Minimal delay (in seconds) for logging of preclipped forces.
+  PreclippedMaxDelay: 0.5
+  # Static forces will be applied above that supported percentage.
+  EnableStaticForcesSupportedPercentage: 50
 GyroSettings:
   DataRate: 50
   AxesMatrix: [-1,0,0,0,-1,0,0,0,-1]
@@ -225,8 +233,8 @@ HardpointActuatorSettings:
   MicrometersPerStep: 0.0607
   MicrometersPerEncoder: 0.2442
   HPEncoderOffsets: [29897, 30786, 53315, 61621, -21824, 35572]
-  HardpointMeasuredForceFaultHigh: 2400
-  HardpointMeasuredForceFaultLow: -3600
+  HardpointMeasuredForceFaultHigh: 1500
+  HardpointMeasuredForceFaultLow: -1500
   HardpointBreakawayFaultHigh: 3950
   HardpointBreakawayFaultLow: -3950
   HardpointMeasuredForceFSBWarningHigh: 100
@@ -238,8 +246,14 @@ HardpointActuatorSettings:
   AirPressureFaultLowRaising: 100
   LowProximity: [1020, 1300, 1287, 1147, 1055, 1070]
   HighProximity: [57740, 64050, 56675, 56037, 65643, 57572]
-  IgnoreTensionRaisingLowering: 1
-  InRangeReadoutsToChaseFromWaitingTension: 1
+  IgnoreTensionRaisingLoweringElevation: 75
+  IgnoreTensionRaisingLowering: 0
+  IgnoreCompressionRaisingLoweringElevation: 75
+  InRangeReadoutsToChaseFromWaitingTension: 50
+  InRangeReadoutsToChaseFromWaitingCompression: 50
+  inRangeAfterRaiseLoops: 100
+  InRangeAfterRaiseTimeoutLoops: 560
+  InRangeAfterRaiseForce: 50
 InclinometerSettings:
   Offset: 0.0
   Limits:
@@ -396,7 +410,8 @@ SafetyControllerSettings:
     FollowingErrorPercentage: 110
     FaultNumberOfFollowingErrors: 50
     FaultOnUnstableCount: 100
-    FaultForTensionAboveSupported: 99
+    FaultForTensionAboveSupported: 95
+    FaultForCompressionAboveSupported: 95
   CellLightSettings:
     FaultOnOutputMismatch: On
     FaultOnSensorMismatch: Off
@@ -420,8 +435,8 @@ SafetyControllerSettings:
     FaultOnAngularAccelerationZ: On
   ILCSettings:
     FaultOnCommunicationTimeout: Off
-    CommunicationTimeoutCountThreshold: 3
-    CommunicationTimeoutPeriod: 5
+    CommunicationTimeoutCountThreshold: 20
+    CommunicationTimeoutPeriod: 50
     FaultOnForceActuatorFollowingErrorCounting: On
     ForceActuatorFollowingErrorCountThreshold: 50
     ForceActuatorFollowingErrorPeriod: 50
@@ -442,7 +457,7 @@ SafetyControllerSettings:
     ElevationTimeout: -1
     InclinometerDeviationDeg: 180
 SlewControllerSettings:
-  TriggerBoosterValves: False
+  TriggerBoosterValves: True
   UseAccelerationForces: True
   UseBalanceForces: True
   UseVelocityForces: True
@@ -475,6 +490,8 @@ ILCApplicationSettings:
   ReportDCAStatus: 255
   ReportDCAPressure: 400
   ReportLVDT: 400
+  # Ignore another failure for this number of seconds.
+  WarningGracePeriod: 60
 ExpansionFPGAApplicationSettings:
   Enabled: True
   Resource: rio://139.229.178.185/RIO
