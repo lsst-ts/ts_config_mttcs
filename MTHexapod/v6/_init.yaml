@@ -71,15 +71,15 @@ camera_config:
     r_57:
       z_offset: 0.0
     i_39:
-      z_offset: -330.3
+      z_offset: -360.342
     g_6:
-      z_offset: 569.376
+      z_offset: +573.254
     u_24:
       z_offset: 1397.789
     y_10:
-      z_offset: -633.305
+      z_offset: -711.201
     z_20:
-      z_offset: -528.019
+      z_offset: -567.733
     NONE:
       z_offset: 0.0
     ph_5:
@@ -149,15 +149,15 @@ m2_config:
     r_57:
       z_offset: 0.0
     i_39:
-      z_offset: -339.134
+      z_offset: -351.508
     g_6:
-      z_offset: 570.516
+      z_offset: +572.114
     u_24:
       z_offset: 1397.789
     y_10:
-      z_offset: -656.212
+      z_offset: -688.294
     z_20:
-      z_offset: -539.698
+      z_offset: -556.054
     NONE:
       z_offset: 0.0
     ph_5:
