@@ -1,0 +1,38 @@
+camera_config:
+  filter_offsets:
+    # v2 filter offsets. First time the filter offsets are split between camera and M2.
+    r_57:
+      z_offset: 0.0
+    i_39:
+      z_offset: -345.321
+    g_6:
+      z_offset: 571.315
+    u_24:
+      z_offset: 1397.789
+    y_10:
+      z_offset: -672.253
+    z_20:
+      z_offset: -547.876
+    NONE:
+      z_offset: 0.0
+    ph_5:
+      z_offset: 0.0
+m2_config:
+  filter_offsets:
+    # v2 filter offsets. First time the filter offsets are split between camera and M2.
+    r_57:
+      z_offset: 0.0
+    i_39:
+      z_offset: -345.321
+    g_6:
+      z_offset: 571.315
+    u_24:
+      z_offset: 1397.789
+    y_10:
+      z_offset: -672.253
+    z_20:
+      z_offset: -547.876
+    NONE:
+      z_offset: 0.0
+    ph_5:
+      z_offset: 0.0
