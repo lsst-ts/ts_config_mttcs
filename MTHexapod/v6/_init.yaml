@@ -67,7 +67,8 @@ camera_config:
   no_movement_idle_time: 1200
   camera: 'MTCamera'
   filter_offsets:
-    # Filter offsets derived from on-sky data 2025-11-02 based on previous version RSO-7
+    # v6 filter offsets derived from on-sky data 2025-11-15 and 2025-11-17.
+    # Same as v5, except the sign in u and z was wrong in v5.
     r_57:
       z_offset: 0.0
     i_39:
@@ -75,11 +76,11 @@ camera_config:
     g_6:
       z_offset: 560.1291
     u_24:
-      z_offset: 1336.3033
+      z_offset: 1459.269
     y_10:
       z_offset: -765.0391
     z_20:
-      z_offset: -668.452
+      z_offset: -560.1726
     NONE:
       z_offset: 0.0
     ph_5:
