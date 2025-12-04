@@ -1,6 +1,6 @@
 targets_lut_coeffs:
-    - CAM:
-        - elevation_rotation_coeffs:
+    CAM:
+        elevation_rotation_coeffs:
         # LUT derived by subtracting the LUT v20 (Laser Tracker derived + Zemax optimization + on-sky optimizaiton) fromt the LUT v5 (Laser Tracker dervied)
             - [[-956.4205010000001, -1.7228515000000044, 0.033202903000000006,
               0.00013079873999999976, 0.0, 0.0], [0.0, -0.0009177940500000002,
@@ -29,14 +29,14 @@ targets_lut_coeffs:
               1.1421397e-12, 6.34552769e-16], [-1.35292641e-09, 2.53062173e-11,
               4.69974241e-13, -7.11372738e-15, -7.79740944e-17]]
             - [[0]]
-        - azimuth_coeffs:
+        azimuth_coeffs:
             - [0]
             - [0]
             - [0]
             - [0]
             - [0]
             - [0]
-        - temperature_coeffs:
+        temperature_coeffs:
             - [0]
             - [0]
             - [0]

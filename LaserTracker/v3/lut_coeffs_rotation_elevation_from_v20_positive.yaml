@@ -1,6 +1,6 @@
 targets_lut_coeffs:
-    - CAM:
-        - elevation_rotation_coeffs:
+    CAM:
+        elevation_rotation_coeffs:
         # Laser-derived + ZEMAX-optimized at both elevation and rotation LUT + on-sky update with 5 dofs, trunc 3 day 10-24 seqs 36-90
         # Same as v20 for Camera MTHexapod.
             - [[-1.29956022e+03, -5.44338781e+01,  3.36038142e-01,  2.52634737e-03,
@@ -38,14 +38,14 @@ targets_lut_coeffs:
               [-1.35292641e-09,  2.53062173e-11,  4.69974241e-13, -7.11372738e-15,
                 -7.79740944e-17]]
             - [[0]]
-        - azimuth_coeffs:
+        azimuth_coeffs:
             - [0]
             - [0]
             - [0]
             - [0]
             - [0]
             - [0]
-        - temperature_coeffs:
+        temperature_coeffs:
             - [0]
             - [0]
             - [0]
