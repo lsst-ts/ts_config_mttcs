@@ -1,0 +1,37 @@
+instances:
+  - sal_index: 1
+    t2sa_host: "lasertracker-vm.cp.lsst.org"
+    t2sa_port: 50000
+    read_timeout: 600
+    zero_points:
+      m2:
+        x: 0.0
+        y: 0.0
+        z: -6.1557
+        u: 0.0
+        v: 0.0
+      camera:
+        x: 0.0
+        y: 0.0
+        z: -3.395191
+        u: 0.0
+        v: 0.0
+    targets:
+      - CAM
+      - M1M3
+      - M2
+      - TMA_CENTRAL
+      - TMA_UPPER
+    num_iterations: 1
+    num_samples: 1
+    randomize_points: false
+    station_lock: false
+    rms_tolerance: 0.05
+    max_tolerance: 1.0
+    two_face_az_tolerance: 0.08
+    two_face_el_tolerance: 0.08
+    two_face_range_tolerance: 0.05
+    rms_drift_tolerance: 0.05
+    max_drift_tolerance: 1.0
+    power_lock: true
+    single_point_measurement_profile: "Single Pt. To SA"
