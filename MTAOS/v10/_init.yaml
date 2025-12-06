@@ -26,7 +26,7 @@ raise_on_large_defocus: True
 closed_loop_timeout_without_images: 900.0 # seconds (15 minutes)
 closed_loop_ofc_configuration:
   truncation_index: 12
-enable_pointing_correction: true
+enable_pointing_correction: false
 pointing_correction_matrix:
   - [0.0, 0.0]                # 0 dzM2
   - [-6.272222e-06, 0.0]      # 1 dxM2 -> X: m2_dxy = -1.129/10.0*0.2/3600  # deg per micron
