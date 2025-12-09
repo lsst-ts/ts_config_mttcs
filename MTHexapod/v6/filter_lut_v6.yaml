@@ -1,0 +1,40 @@
+camera_config:
+  filter_offsets:
+    # v6 filter offsets derived from on-sky data 2025-11-15 and 2025-11-17.
+    # Same as v5, except the sign in u and z was wrong in v5.
+    r_57:
+      z_offset: 0.0
+    i_39:
+      z_offset: -383.7391
+    g_6:
+      z_offset: 560.1291
+    u_24:
+      z_offset: 1459.269
+    y_10:
+      z_offset: -765.0391
+    z_20:
+      z_offset: -560.1726
+    NONE:
+      z_offset: 0.0
+    ph_5:
+      z_offset: 0.0
+m2_config:
+  filter_offsets:
+    # v6 filter offsets derived from on-sky data 2025-11-15 and 2025-11-17.
+    # Note that at this point these were kept fixed and only the camera ones were updated.
+    r_57:
+      z_offset: 0.0
+    i_39:
+      z_offset: -345.321
+    g_6:
+      z_offset: 571.315
+    u_24:
+      z_offset: 1397.789
+    y_10:
+      z_offset: -672.253
+    z_20:
+      z_offset: -547.876
+    NONE:
+      z_offset: 0.0
+    ph_5:
+      z_offset: 0.0

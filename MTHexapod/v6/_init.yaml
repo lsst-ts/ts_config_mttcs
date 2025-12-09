@@ -67,19 +67,19 @@ camera_config:
   no_movement_idle_time: 1200
   camera: 'MTCamera'
   filter_offsets:
-    # Filter offsets derived from on-sky data 2025-11-02 based on previous version RSO-7
+    # v0 filter offsets derived from batoid by G. Megias. A. Rasmussen confirmed accurcy to ~1um with ZEMAX.
     r_57:
       z_offset: 0.0
     i_39:
-      z_offset: -383.7391
+      z_offset: -690.642
     g_6:
-      z_offset: 560.1291
+      z_offset: 1142.63
     u_24:
-      z_offset: 1336.3033
+      z_offset: 2795.578
     y_10:
-      z_offset: -765.0391
+      z_offset: -1344.506
     z_20:
-      z_offset: -668.452
+      z_offset: -1095.752
     NONE:
       z_offset: 0.0
     ph_5:
@@ -145,19 +145,19 @@ m2_config:
   no_movement_idle_time: 12000
   camera: 'MTCamera'
   filter_offsets:
-    # Filter offsets derived from on-sky data 2025-11-02 based on previous version RSO-7
+    # v0 filter offsets derived from batoid by G. Megias. A. Rasmussen confirmed accurcy to ~1um with ZEMAX.
     r_57:
       z_offset: 0.0
     i_39:
-      z_offset: -345.321
+      z_offset: 0.0
     g_6:
-      z_offset: 571.315
+      z_offset: 0.0
     u_24:
-      z_offset: 1397.789
+      z_offset: 0.0
     y_10:
-      z_offset: -672.253
+      z_offset: 0.0
     z_20:
-      z_offset: -547.876
+      z_offset: 0.0
     NONE:
       z_offset: 0.0
     ph_5:
