@@ -1,0 +1,38 @@
+camera_config:
+  filter_offsets:
+    # v0 filter offsets derived from batoid by G. Megias. A. Rasmussen confirmed accurcy to ~1um with ZEMAX.
+    r_57:
+      z_offset: 0.0
+    i_39:
+      z_offset: -690.642
+    g_6:
+      z_offset: 1142.63
+    u_24:
+      z_offset: 2795.578
+    y_10:
+      z_offset: -1344.506
+    z_20:
+      z_offset: -1095.752
+    NONE:
+      z_offset: 0.0
+    ph_5:
+      z_offset: 0.0
+m2_config:
+  filter_offsets:
+    # v0 filter offsets derived from batoid by G. Megias. A. Rasmussen confirmed accurcy to ~1um with ZEMAX.
+    r_57:
+      z_offset: 0.0
+    i_39:
+      z_offset: 0.0
+    g_6:
+      z_offset: 0.0
+    u_24:
+      z_offset: 0.0
+    y_10:
+      z_offset: 0.0
+    z_20:
+      z_offset: 0.0
+    NONE:
+      z_offset: 0.0
+    ph_5:
+      z_offset: 0.0
