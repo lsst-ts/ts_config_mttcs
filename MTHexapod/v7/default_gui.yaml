@@ -1,0 +1,18 @@
+---
+
+# Connection timeout in second.
+connection_timeout: 10
+
+# Configuration of the camera hexapod PXI controller.
+camera_config:
+  # Host name.
+  host: "camhex-pxi-controller.cp.lsst.org"
+  # Port number.
+  port: 5590
+
+# Configuration of the M2 hexapod PXI controller.
+m2_config:
+  # Host name.
+  host: "m2-hexapod-pxi.cp.lsst.org"
+  # Port number.
+  port: 5595
