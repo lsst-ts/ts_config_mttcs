@@ -1,0 +1,4 @@
+camera_config:
+  apply_compensation_while_exposing: False
+m2_config:
+  apply_compensation_while_exposing: False
