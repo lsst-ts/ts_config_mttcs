@@ -1,5 +1,23 @@
 camera_config:
   apply_compensation_while_exposing: False
+  filter_offsets:
+    # v0 filter offsets derived from batoid by G. Megias. A. Rasmussen confirmed accurcy to ~1um with ZEMAX.
+    r_57:
+      z_offset: 0.0
+    i_39:
+      z_offset: -690.642
+    g_6:
+      z_offset: 1142.63
+    u_24:
+      z_offset: 2795.578
+    y_10:
+      z_offset: -1344.506
+    z_20:
+      z_offset: -1095.752
+    NONE:
+      z_offset: 0.0
+    ph_5:
+      z_offset: 0.0
   elevation_rotation_coeffs:
     # Laser-derived + ZEMAX-optimized at both elevation and rotation LUT + on-sky update with 5 dofs, trunc 5 day 10-24 seqs 36-90
     - [[-2.19636532e+02, -2.28471850e+01,  1.79423680e-01,  2.52634737e-03,
@@ -41,6 +59,24 @@ camera_config:
     - [[0]]
 m2_config:
   apply_compensation_while_exposing: False
+  filter_offsets:
+    # v0 filter offsets derived from batoid by G. Megias. A. Rasmussen confirmed accurcy to ~1um with ZEMAX.
+    r_57:
+      z_offset: 0.0
+    i_39:
+      z_offset: 0.0
+    g_6:
+      z_offset: 0.0
+    u_24:
+      z_offset: 0.0
+    y_10:
+      z_offset: 0.0
+    z_20:
+      z_offset: 0.0
+    NONE:
+      z_offset: 0.0
+    ph_5:
+      z_offset: 0.0
   elevation_rotation_coeffs:
     # Laser-derived LUT
     - [[-61]]
