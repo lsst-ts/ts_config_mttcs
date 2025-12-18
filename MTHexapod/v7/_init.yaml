@@ -88,7 +88,7 @@ camera_config:
   step_size_z: 0.0
   step_size_uv: 0.0
   step_size_w: 0.0
-  apply_compensation_while_exposing: True
+  apply_compensation_while_exposing: False
   host: localhost
   port: 5560
 m2_config:
@@ -167,6 +167,6 @@ m2_config:
   step_size_z: 1000.0
   step_size_uv: 0.1
   step_size_w: 0.025
-  apply_compensation_while_exposing: True
+  apply_compensation_while_exposing: False
   host: localhost
   port: 5550
