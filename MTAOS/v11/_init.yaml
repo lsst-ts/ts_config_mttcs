@@ -3,7 +3,7 @@ instrument: lsst
 data_path: LSSTCam
 collections: "LSSTCam/raw/all,LSSTCam/calib,refcats"
 run_name: "LSSTCam/runs/quickLook"
-num_expected_tables: 8
+num_expected_tables: 4
 num_expected_tables_min: 3
 pipeline_n_processes: 9
 zernike_table_name: zernikes
