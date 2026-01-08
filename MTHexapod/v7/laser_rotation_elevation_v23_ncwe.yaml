@@ -1,10 +1,8 @@
-compensation_interval: 0.2
-connection_timeout: 10
 camera_config:
+  apply_compensation_while_exposing: False
   elevation_rotation_coeffs:
     # Laser-derived + ZEMAX-optimized at both elevation and rotation LUT + on-sky update with 5 dofs, trunc 5 day 10-24 seqs 36-90
-    # Same as v23, which is the same as 
-    # v22 but zeropoints have been updated with the optimized zeropoints from v20.
+    # Same as v22 but zeropoints have been updated with the optimized zeropoints from v20.
     - [[-1.29956022e+03, -2.28471850e+01,  1.79423680e-01,  2.52634737e-03,
         -9.26523951e-06, -8.46363619e-10],
       [-1.65693899e+01, -5.56807864e-02, -6.31600703e-04,  6.31217845e-06,
@@ -42,61 +40,10 @@ camera_config:
       [-8.16882238e-10, -9.53284899e-11,  1.06818729e-13,  1.12628968e-14,
         0.00000000e+00]]
     - [[0]]
-  azimuth_coeffs:
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-  temperature_coeffs:
-    # From Document 7334 page 9 last modified 2016-01-20: z correction is 1.32mm/20C
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-  min_compensation_adjustment:
-    - 1
-    - 1
-    - 1
-    - 3.3e-4
-    - 3.3e-4
-    - 3.3e-4
-  min_temperature: -20
-  max_temperature: 20
-  enable_lut_temperature: False
-  no_movement_idle_time: 1200
-  camera: 'MTCamera'
-  filter_offsets:
-    # v0 filter offsets derived from batoid by G. Megias. A. Rasmussen confirmed accurcy to ~1um with ZEMAX.
-    r_57:
-      z_offset: 0.0
-    i_39:
-      z_offset: -690.642
-    g_6:
-      z_offset: 1142.63
-    u_24:
-      z_offset: 2795.578
-    y_10:
-      z_offset: -1344.506
-    z_20:
-      z_offset: -1095.752
-    NONE:
-      z_offset: 0.0
-    ph_5:
-      z_offset: 0.0
-  step_size_xy: 0.0
-  step_size_z: 0.0
-  step_size_uv: 0.0
-  step_size_w: 0.0
-  apply_compensation_while_exposing: False
-  host: localhost
-  port: 5560
 m2_config:
+  apply_compensation_while_exposing: False
   elevation_rotation_coeffs:
-    # Laser-derived LUT (same as LUT v5)
+    # Laser-derived LUT
     - [[-61]]
     - [
         [2799.7415621728373],
@@ -121,55 +68,3 @@ m2_config:
       ]
     - [[-0.0239]]
     - [[0]]
-  azimuth_coeffs:
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-  temperature_coeffs:
-    # From Document 7334 page 9 last modified 2016-01-20: z correction is 1.05mm/20C
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-    - [0]
-  min_compensation_adjustment:
-    - 1
-    - 1
-    - 1
-    - 6.5e-5
-    - 6.5e-5
-    - 6.5e-5
-  min_temperature: -20
-  max_temperature: 20
-  enable_lut_temperature: False
-  no_movement_idle_time: 12000
-  camera: 'MTCamera'
-  filter_offsets:
-    # v0 filter offsets derived from batoid by G. Megias. A. Rasmussen confirmed accurcy to ~1um with ZEMAX.
-    r_57:
-      z_offset: 0.0
-    i_39:
-      z_offset: 0.0
-    g_6:
-      z_offset: 0.0
-    u_24:
-      z_offset: 0.0
-    y_10:
-      z_offset: 0.0
-    z_20:
-      z_offset: 0.0
-    NONE:
-      z_offset: 0.0
-    ph_5:
-      z_offset: 0.0
-  step_size_xy: 1000.0
-  step_size_z: 1000.0
-  step_size_uv: 0.1
-  step_size_w: 0.025
-  apply_compensation_while_exposing: False
-  host: localhost
-  port: 5550
