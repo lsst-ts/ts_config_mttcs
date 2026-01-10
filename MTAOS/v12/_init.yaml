@@ -31,7 +31,7 @@ closed_loop_ofc_configuration:
   truncation_index: 12
 closed_loop_filter_change_gain:
   n_iter: 4
-  gain: [0.75, null, null]
+  gain: [0.5, 0.0, 0.0]
 enable_pointing_correction: false
 pointing_correction_matrix:
   - [0.0, 0.0]                # 0 dzM2
