@@ -80,3 +80,27 @@ instances:
           - [0]
           - [0]
           - [0]
+      M2:
+        elevation_rotation_coeffs:
+          - [[0]]
+          - [[0]]
+          - [[0]]
+          - [[0]]
+          - [[0]]
+          - [[0]]
+        azimuth_coeffs:
+          - [0]
+          - [0]
+          - [0]
+          - [0]
+          - [0]
+          - [0]
+        temperature_coeffs:
+          - [0]
+          - [0]
+          - [0]
+          - [0]
+          - [0]
+          - [0]
+    min_temperature: -20
+    max_temperature: 20
