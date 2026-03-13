@@ -174,7 +174,7 @@ ForceActuatorSettings:
   LowerDecrementPercentage: 0.05
   RaiseLowerFollowingErrorLimit: 200
   # If true, automatically turn on hardpoint balance forces when mirror is raised in non-engineering state
-  HardpointBalanceForcesOnInActiveState: False
+  HardpointBalanceForcesOnInActiveState: True
   AccelerationForceComponent:
     MaxRateOfChange: 10.0
     NearZeroValue: 1.0
@@ -220,7 +220,7 @@ ForceActuatorSettings:
   # Minimal delay (in seconds) for logging of preclipped forces.
   PreclippedMaxDelay: 0.5
   # Static forces will be applied above that supported percentage.
-  EnableStaticForcesSupportedPercentage: 50
+  EnableStaticForcesSupportedPercentage: 20
 GyroSettings:
   DataRate: 50
   AxesMatrix: [-1,0,0,0,-1,0,0,0,-1]
