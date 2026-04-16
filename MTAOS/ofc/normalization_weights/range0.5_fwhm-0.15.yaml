@@ -8,6 +8,7 @@
 #   w_i = r_i^alpha * f_i^beta
 #
 # where alpha is the range exponent and beta is the FWHM exponent.
+# For this file alpha is 0.5 and beta is -0.5
 #
 # The quadrature option computes the field-averaged FWHM response using
 # a circular quadrature grid over the field of view.
