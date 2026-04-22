@@ -33,7 +33,7 @@ closed_loop_ofc_configuration:
 closed_loop_filter_change_gain:
   n_iter: 0
   gain: null
-enable_pointing_correction: false
+enable_pointing_correction: true
 pointing_correction_matrix:
 - [  +0.00000000,   +0.00000000]
 - [  +0.00112872,   +0.00000000]
