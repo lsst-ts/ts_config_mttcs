@@ -442,8 +442,8 @@ SafetyControllerSettings:
     ForceActuatorFollowingErrorPeriod: 50
     FaultOnForceActuatorFollowingErrorImmediate: On
     FaultOnHardpointActuatorMeasuredForce: On
-    HardpointActuatorMeasuredForceCountThreshold: 50
-    HardpointActuatorMeasuredForcePeriod: 50
+    HardpointActuatorMeasuredForceCountThreshold: 2
+    HardpointActuatorMeasuredForcePeriod: 10
     FaultOnAirPressure: On
     AirPressureCountThreshold: 50
     AirPressurePeriod: 50
