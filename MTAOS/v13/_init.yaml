@@ -16,9 +16,9 @@ m1m3_stress_limit: 137900.0 # Pascals (approx. 20 psi)
 m2_stress_limit: 344737.0 # Pascals (approx. 50 psi)
 stress_scale_approach: 'scale'
 stress_scale_factor: 1.25
-elevation_delta_limit_max: 9.0
-elevation_delta_limit_min: 4.0
-rotation_delta_limit: 9.0
+elevation_delta_limit_max: 100.0
+elevation_delta_limit_min: 100.0
+rotation_delta_limit: 400.0
 tilt_offset_threshold: 0.25
 dz_threshold_min: 300.0
 dz_threshold_max: 1500.0
