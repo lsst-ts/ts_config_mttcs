@@ -35,8 +35,9 @@ instances:
     power_lock: true
     single_point_measurement_profile: "Single Pt. To SA"
     targets_lut_coeffs:
-      CAM: # from BLOCK-T436 and Hex. LUTs v23
+      CAM:
         elevation_rotation_coeffs:
+          # LUT dervied from the data acquired in the BLOCK-T436v5 using Hexapod LUT v23.
           - [[-1008.926967409381, -5.938971945436696, -0.6827793984556424,
               0.014963146541005291, -9.588030753904632e-05], [25.214025282453264,
               0.5610520735542168, -0.022022029358831983, 0.00032037163717813834,
