@@ -1,0 +1,5 @@
+host: tma-controller01.cp.lsst.org
+telemetry_host: tma-controller01.cp.lsst.org
+park_settings:
+  - ElevationParking
+
