@@ -1,4 +1,0 @@
-camera: lsstCam
-instrument: lsst
-collections: LSSTCam/calib/unbounded,LSSTCam/raw/all
-data_path: /scratch/IM_Pf/LSSTCam
