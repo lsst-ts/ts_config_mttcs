@@ -1,3 +1,0 @@
-zernike_table_name: zernikes
-zernike_column_pattern: opd_columns
-subtract_intrinsics: True

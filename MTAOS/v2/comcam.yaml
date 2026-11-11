@@ -1,5 +1,0 @@
-camera: comcam
-instrument: comcam
-visit_id_offset: 2021111900000
-collections: refcats,LSSTComCam/raw/all,LSSTComCam/calib
-data_path: /repo/LSSTComCam
